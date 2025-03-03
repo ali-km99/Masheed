@@ -48,7 +48,10 @@
     </section>
   </div>
   <section class="bg-[#1e1e1e] h-screen">
-    <h2 class="text-center text-4xl text-white py-12">تعرف على عملائنا</h2>
+    <div class="mb-12">
+      <h2 class="text-center text-4xl text-white p-2">تعرف على عملائنا</h2>
+      <p class="text-center text-slate-300 p-2">لقد تعاملنا مع 120+ شركة ليبية و عالميا</p>
+    </div>
     <swiper
       :modules="[Navigation, Pagination, Autoplay]"
       :slides-per-view="3"
@@ -68,8 +71,79 @@
         <div class=""><img :src="program.image" class="h-72 w-72 rounded-full" /></div>
       </swiper-slide>
     </swiper>
+    <div class="flex">
+      <button
+        class="bg-red-600 text-white text-lg mx-auto p-4 px-10 rounded-full m-2 hover:bg-red-800 duration-500"
+      >
+        اطلع على عملائنا المميزون
+      </button>
+    </div>
   </section>
-  <!-- <ContactUS /> -->
+  <section dir="rtl">
+    <div class="p-4 m-4">
+      <h1 class="text-6xl text-red-600 font-semibold">01</h1>
+      <h1 class="text-6xl text-white font-semibold">من نحن ؟</h1>
+      <p class="text-white w-1/3 mt-4 leading-loose text-lg">
+        شركة المشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
+        المختلفة. نتميز بتقديم حلول هندسية متطورة بجودة عالية، بالتعاون مع أفضل الشركات العالمية.
+        هدفنا تلبية متطلبات السوق عبر شبكة توزيع تغطي مختلف المدن الليبية.
+      </p>
+      <RouterLink to="/" class="hover:text-red-900 duration-300 text-red-600">
+        حول مشيد >
+      </RouterLink>
+    </div>
+    <div class="w-full grid lg:grid-cols-4 grid-cols-2 gap-6 m-6 p-4 mx-auto">
+      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+        <div
+          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+        >
+          <img class="w-10" src="../assets/icons/consultation.png" alt="" />
+        </div>
+        <h2 class="text-center text-2xl mt-10">خدمات استشارية</h2>
+        <p class="text-center mt-2 text-black/70">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
+          voluptatibus perferendis
+        </p>
+      </div>
+      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+        <div
+          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+        >
+          <img class="w-10" src="../assets/icons/oil-pump.png" alt="" />
+        </div>
+        <h2 class="text-center text-lg mt-10">النفط و الغاز</h2>
+        <p class="text-center mt-2 text-black/70">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
+          voluptatibus perferendis
+        </p>
+      </div>
+
+      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+        <div
+          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+        >
+          <img class="w-10" src="../assets/icons/hook.png" alt="" />
+        </div>
+        <h2 class="text-center text-lg mt-10">البناء</h2>
+        <p class="text-center mt-2 text-black/70">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
+          voluptatibus perferendis
+        </p>
+      </div>
+      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+        <div
+          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+        >
+          <img class="w-10" src="../assets/icons/factory.png" alt="" />
+        </div>
+        <h2 class="text-center text-lg mt-10">القطاع الصناعي</h2>
+        <p class="text-center mt-2 text-black/70">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
+          voluptatibus perferendis
+        </p>
+      </div>
+    </div>
+  </section>
   <FooterComp></FooterComp>
 </template>
 
