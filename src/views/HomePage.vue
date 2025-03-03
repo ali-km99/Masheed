@@ -178,10 +178,10 @@ const programs = ref([
     id: 4,
     image: 'https://i.postimg.cc/Dy9TPyF6/logo004.png',
   },
-  {
-    id: 5,
-    image: 'https://i.postimg.cc/wvj8j1cq/logo005.webp',
-  },
+  // {
+  //   id: 5,
+  //   image: 'https://i.postimg.cc/wvj8j1cq/logo005.webp',
+  // },
   {
     id: 6,
     image: 'https://i.postimg.cc/SxcpTFxh/logo006.jpg',
