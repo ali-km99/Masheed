@@ -106,7 +106,7 @@
         حول مشيد >
       </RouterLink>
     </div>
-    <div class="w-full grid lg:grid-cols-4 grid-cols-2 gap-6 m-6 p-4 py-20 mx-auto bg-mygradient">
+    <div class="w-full grid lg:grid-cols-4 grid-cols-1 gap-6 m-6 p-4 py-20 mx-auto bg-mygradient">
       <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
           class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
@@ -159,7 +159,7 @@
   </section>
 
   <section dir="rtl">
-    <div class="w-1/2 px-6">
+    <div class="lg:w-1/2 px-6">
       <h1
         v-motion-slide-right
         :delay="200"
@@ -196,8 +196,8 @@
               :key="program.id"
               class="px-12 drop-shadow-md"
             >
-              <div class="flex justify-around w-full">
-                <div class="w-1/3 rounded-md m-4 p-4 min-w-[300px] bg-black/65">
+              <div class="flex flex-col md:flex-row justify-around w-full items-center">
+                <div class="md:w-1/3 rounded-md m-4 p-4 min-w-[300px] bg-black/65 md:h-[500px]">
                   <p
                     v-motion-slide-top
                     :delay="400"
@@ -215,7 +215,7 @@
                     {{ program.decripicon }}
                   </p>
                 </div>
-                <div class="h-[500px] p-4">
+                <div class="md:h-[500px] p-4 min-w-[300px]">
                   <img :src="program.image" class="bg-contain rounded-lg" />
                 </div>
               </div>
