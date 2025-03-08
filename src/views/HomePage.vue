@@ -81,9 +81,23 @@
   </section>
   <section dir="rtl">
     <div class="p-4 m-4">
-      <h1 class="text-6xl text-red-600 font-semibold">01</h1>
-      <h1 class="text-6xl text-white font-semibold">من نحن ؟</h1>
-      <p class="text-white lg:w-1/3 mt-4 leading-loose text-lg">
+      <h1
+        v-motion-slide-right
+        :delay="200"
+        :duration="1200"
+        class="text-6xl text-red-600 font-semibold"
+      >
+        01
+      </h1>
+      <div v-motion-slide-right :delay="600" :duration="1200">
+        <h1 class="text-6xl text-white font-semibold">من نحن ؟</h1>
+      </div>
+      <p
+        v-motion-slide-top
+        :delay="800"
+        :duration="1200"
+        class="text-white lg:w-1/3 mt-4 leading-loose text-lg"
+      >
         شركة المشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
         المختلفة. نتميز بتقديم حلول هندسية متطورة بجودة عالية، بالتعاون مع أفضل الشركات العالمية.
         هدفنا تلبية متطلبات السوق عبر شبكة توزيع تغطي مختلف المدن الليبية.
@@ -92,58 +106,126 @@
         حول مشيد >
       </RouterLink>
     </div>
-    <div class="w-full grid lg:grid-cols-4 grid-cols-2 gap-6 m-6 p-4 mx-auto">
-      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+    <div class="w-full grid lg:grid-cols-4 grid-cols-2 gap-6 m-6 p-4 py-20 mx-auto bg-mygradient">
+      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
           class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/consultation.png" alt="" />
         </div>
-        <h2 class="text-center text-2xl mt-10">خدمات استشارية</h2>
-        <p class="text-center mt-2 text-black/70">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
-          voluptatibus perferendis
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">خدمات استشارية</h2>
+        <p class="text-center mt-2 text-white">
+          تقدم شركة المشيد للكيماويات الاستشارات الفنية للعديد من الشركات والعملاء والمقاولين الذين
+          ينفذون العديد من المشاريع الحيوية والتي تشمل مشاريع البنية التحتية في ليبيا.
         </p>
       </div>
-      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
           class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/oil-pump.png" alt="" />
         </div>
-        <h2 class="text-center text-lg mt-10">النفط و الغاز</h2>
-        <p class="text-center mt-2 text-black/70">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
-          voluptatibus perferendis
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">النفط و الغاز</h2>
+        <p class="text-center mt-2 text-white">
+          تقدم شركة المشيد أفضل الحلول المتكاملة بما في ذلك التقنيات والمواد الكيميائية
         </p>
       </div>
 
-      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
           class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/hook.png" alt="" />
         </div>
-        <h2 class="text-center text-lg mt-10">البناء</h2>
-        <p class="text-center mt-2 text-black/70">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
-          voluptatibus perferendis
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">البناء</h2>
+        <p class="text-center mt-2 text-white">
+          تسعى شركة المشيد لفهم احتياجات عملائها وتقديم حلول فعالة من خلال منتجات مبتكرة ومتطورة، مع
+          التركيز على تحسين الكفاءة لضمان أفضل النتائج في مجال كيماويات البناء.
         </p>
       </div>
-      <div class="w-full bg-red-600 h-72 flex flex-col items-center rounded-lg relative">
+      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
           class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/factory.png" alt="" />
         </div>
-        <h2 class="text-center text-lg mt-10">القطاع الصناعي</h2>
-        <p class="text-center mt-2 text-black/70">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, voluptates? Sequi
-          voluptatibus perferendis
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">القطاع الصناعي</h2>
+        <p class="text-center mt-2 text-white">
+          للمساهمة في تطوير الاقتصاد وتقليل الاعتماد على النفط والغاز، نوفر مواد أساسية للصناعة، مثل
+          الزيوت والشحوم، الأصباغ، مواد التعبئة واللصق، والدهانات الصناعية.
         </p>
       </div>
     </div>
   </section>
+
+  <section dir="rtl">
+    <div class="w-1/2 px-6">
+      <h1
+        v-motion-slide-right
+        :delay="200"
+        :duration="1200"
+        class="text-6xl text-red-600 font-semibold"
+      >
+        02
+      </h1>
+      <div v-motion-slide-right :delay="400" :duration="1000">
+        <h1 class="text-6xl text-white font-semibold">خدماتنا</h1>
+      </div>
+      <p
+        v-motion-slide-top
+        :delay="600"
+        :duration="800"
+        class="text-white lg:w-4/5 mt-4 leading-loose text-lg"
+      >
+        تولي شركة المشيد أولوية لتكون قريبة من زبائنها وتفهم احتيجاتهم وحل مشاكلهم كمانقدم منتجات
+        مبتكرة و متطورة ونسعى دائما إلى زيادة كفائة منتجاتنا لنضمن أفضل النتائج الممكنة , حيث مقدم
+        الحول الأتية في مجال كيماويات البناء .
+      </p>
+    </div>
+    <div class="flex mb-20">
+      <div class="w-11/12 rounded-lg m-4 mx-auto bg-contain bg-home">
+        <div class="bg-[#3a3a3a]/[53%] backdrop-blur-0 w-full p-6">
+          <Swiper
+            :modules="[Navigation]"
+            :loop="true"
+            :autoplay="{ delay: 2000, disableOnInteraction: false }"
+            navigation
+          >
+            <swiper-slide
+              v-for="program in programs2"
+              :key="program.id"
+              class="px-12 drop-shadow-md"
+            >
+              <div class="flex justify-around w-full">
+                <div class="w-1/3 rounded-md m-4 p-4 min-w-[300px] bg-black/65">
+                  <p
+                    v-motion-slide-top
+                    :delay="400"
+                    :duration="1200"
+                    class="text-white text-3xl font-bold font-Tajawal pb-3"
+                  >
+                    {{ program.titele }}
+                  </p>
+                  <p
+                    v-motion-slide-top
+                    :delay="600"
+                    :duration="1000"
+                    class="text-white font-Tajawal"
+                  >
+                    {{ program.decripicon }}
+                  </p>
+                </div>
+                <div class="h-[500px] p-4">
+                  <img :src="program.image" class="bg-contain rounded-lg" />
+                </div>
+              </div>
+            </swiper-slide>
+          </Swiper>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <FooterComp></FooterComp>
 </template>
 
@@ -195,9 +277,81 @@ const programs = ref([
     image: 'https://i.postimg.cc/zfjYNCh2/logo007.jpg',
   },
 ])
+const programs2 = ref([
+  {
+    id: 1,
+    image: 'https://i.postimg.cc/WzxpPzK4/serv1.webp',
+    titele: 'إضافة الخرسانة',
+    decripicon: `
+    نقدم مجموعة واسعة من الإضافات الخرسانية
+    المصممة لتحسين قابلية التشغيل، وتقليل نفاذية الخرسانة،
+     وزيادة القوة والمتانة. سواء كنت بحاجة إلى إضافات مسرعة
+     أو مبطئة للشك، أو تحسين مقاومة الخرسانة للظروف البيئية
+     القاسية، فإن حلولنا المبتكرة تضمن أعلى مستويات الأداء والاستدامة.`,
+  },
+  {
+    id: 2,
+    image: 'https://i.postimg.cc/VNzfw37X/serv2.jpg',
+    titele: 'أنظمة العزل المائي  والحراري والصوتي',
+    decripicon: `حماية المباني من العوامل البيئية أصبح أسهل
+    مع أنظمتنا المتطورة للعزل المائي،
+    الحراري والصوتي. نقدم حلولًا متكاملة لعزل الأسطح، الجدران، والأقبية باستخدام
+    أحدث التقنيات والمواد ذات الكفاءة العالية، مما يضمن
+     تقليل استهلاك الطاقة وزيادة الراحة داخل المباني.`,
+  },
+  {
+    id: 3,
+    image: 'https://i.postimg.cc/t4QRS1WS/serv3.jpg',
+    titele: 'أنظمة ترميم وتأهيل المنشئات',
+    decripicon: `نوفر حلولًا متقدمة لمعالجة التشققات، وتعزيز الهياكل الخرسانية،
+    وإصلاح العناصر الإنشائية المتضررة بفعل الزمن أو
+    العوامل البيئية. تشمل خدماتنا مواد وتقنيات
+     إصلاح عالية الجودة تضمن إعادة تأهيل المباني
+     والمنشآت لتستعيد كفاءتها وأدائها بأعلى المعايير.`,
+  },
+  {
+    id: 4,
+    image: 'https://i.postimg.cc/Hs7s90c8/serv4.webp',
+    titele: 'أرضيات صناعية',
+    decripicon: `تصميم وتركيب الأرضيات الصناعية
+    التي تلبي متطلبات المصانع، المستودعات
+    ، والمرافق التجارية والصحية، حيث تتميز
+     بقدرتها العالية على تحمل الأحمال الثقيلة
+    ، ومقاومتها للاحتكاك، والمواد الكيميائية.
+     نقدم حلولًا مخصصة تناسب احتياجاتك، سواء كانت
+    أرضيات إيبوكسي، بولي يوريثان، أو خرسانية معالجة.`,
+  },
+  {
+    id: 5,
+    image: 'https://i.postimg.cc/mZng9pDG/serv5.jpg',
+    titele: 'الزرع و الحقن الكيميائي',
+    decripicon: `تقنيات مبتكرة لمعالجة التسربات في الخرسانة،
+     تعزيز التربة، وتأمين الهياكل
+     باستخدام مواد الحقن الكيميائي
+    الفعالة. حلول التثبيت الكيميائي
+     لدينا تضمن قوة تحمل أعلى للبراغي
+     والمثبتات في المنشآت الخرسانية
+     والمعدنية، مما يعزز الاستقرار والأمان.`,
+  },
+  {
+    id: 6,
+    image: 'https://i.postimg.cc/N0bgjpVS/serv6.webp',
+    titele: 'مواد الاصقة و الرابطة  و المائلة.',
+    decripicon: `نوفر مجموعة شاملة من المواد اللاصقة
+     والسدادات والحشوات المستخدمة في العزل،
+     والتركيب، وإغلاق الفجوات لضمان مقاومة
+    ممتازة للمياه، والتآكل، والعوامل البيئية
+     المختلفة. منتجاتنا مثالية للواجهات
+     الأرضيات، النوافذ، والأبواب، مما
+    يعزز جودة البناء ويطيل عمره الافتراضي.`,
+  },
+])
 </script>
-
 <style>
+.bg-mygradient {
+  background-color: #ff0808;
+  background-image: linear-gradient(45deg, #ff0808 0%, #9f0000 74%);
+}
 body {
   background: #1e1e1e;
 }
@@ -222,11 +376,11 @@ body {
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #c20001;
+  color: #fefefe;
 }
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
-  color: #fefefe;
+  color: #c20001;
   transition-duration: 300ms;
 }
 .swiper-pagination-bullet {
