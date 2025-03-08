@@ -73,7 +73,7 @@
     </swiper>
     <div class="flex">
       <button
-        class="bg-red-600 text-white text-lg mx-auto p-4 px-10 rounded-full m-2 hover:bg-red-800 duration-500"
+        class="bg-red-600 text-white text-lg mx-auto p-4 px-10 m-2 bg-gradient-to-r from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
       >
         اطلع على عملائنا المميزون
       </button>
@@ -223,6 +223,55 @@
           </Swiper>
         </div>
       </div>
+    </div>
+  </section>
+  <section dir="rtl" class="my-12">
+    <div class="lg:w-1/2 px-6">
+      <h1
+        v-motion-slide-right
+        :delay="200"
+        :duration="1200"
+        class="text-6xl text-red-600 font-semibold"
+      >
+        03
+      </h1>
+      <div v-motion-slide-right :delay="400" :duration="1000">
+        <h1 class="text-6xl text-white font-semibold">التواصل معنا</h1>
+      </div>
+      <p
+        v-motion-slide-top
+        :delay="600"
+        :duration="800"
+        class="text-white lg:w-4/5 mt-4 leading-loose text-lg"
+      >
+        فريق مشيد سعيد بخدمتكم في أي وقت. لأي استفسار بإمكانك التواصل معنا:
+      </p>
+      <button
+        class="text-white h-14 w-36 ml-16 mt-4 bg-gradient-to-r mb-10 from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
+      >
+        تواصل معنا
+      </button>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.905542470924!2d13.242031175127021!3d32.90066557765773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8930012b75501%3A0x9e29a815306fd94a!2z2YXYtNmK2K8g2YTZhNmD2YrZhdin2YjZitin2Ko!5e0!3m2!1sen!2sly!4v1741404910451!5m2!1sen!2sly"
+        width="1300"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="mx-20 rounded-lg hidden md:block"
+      ></iframe>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.905542470924!2d13.242031175127021!3d32.90066557765773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8930012b75501%3A0x9e29a815306fd94a!2z2YXYtNmK2K8g2YTZhNmD2YrZhdin2YjZitin2Ko!5e0!3m2!1sen!2sly!4v1741404910451!5m2!1sen!2sly"
+        width="350"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        class="rounded-lg md:hidden"
+      ></iframe>
     </div>
   </section>
 
