@@ -10,8 +10,6 @@ export default {
       backgroundImage: {
         home: "url('../assets/imgs/img8.jpg')",
         homeSM: "url('../assets/imgs/img8sm.jpg')",
-        footer2: "url('../assets/footerBG2.png')",
-        about: "url('../assets/AboutBG.png')",
       },
       colors: {
         primary: '#C50000', // Replace with your desired color

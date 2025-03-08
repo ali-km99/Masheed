@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-footer2 bg-white min-h-[70vh] bg-no-repeat bg-cover p-8">
+  <footer class="bg-white min-h-[70vh] bg-no-repeat bg-cover p-8">
     <div class="p-6 flex justify-between flex-col md:flex-row" dir="rtl">
       <div class="h-full md:w-1/4">
         <img class="pt-2 mt-4 mx-auto" width="200" src="../assets/imgs/logo.png" alt="" />
