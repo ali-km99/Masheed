@@ -5,7 +5,7 @@
       <RouterLink to="/" class="hover:text-primary"> الصفحة الرئيسة </RouterLink>
       <RouterLink to="/" class="hover:text-primary duration-300"> حول </RouterLink>
 
-      <RouterLink to="/" class="hover:text-primary duration-300"> العلامات التجارية </RouterLink>
+      <RouterLink to="/products" class="hover:text-primary duration-300"> المنتجات </RouterLink>
       <RouterLink to="/" class="hover:text-primary duration-300"> المركز الأعلامي </RouterLink>
       <RouterLink to="/" class="hover:text-primary duration-300"> تواصل معنا </RouterLink>
     </div>

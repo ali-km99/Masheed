@@ -10,6 +10,7 @@ export default {
       backgroundImage: {
         home: "url('../assets/imgs/img8.jpg')",
         homeSM: "url('../assets/imgs/img8sm.jpg')",
+        products: "url('../assets/imgs/bg3.webp')",
       },
       colors: {
         primary: '#C50000', // Replace with your desired color

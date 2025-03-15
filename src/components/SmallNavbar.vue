@@ -73,7 +73,7 @@ const handleNavigation = (): void => {
           </li>
 
           <li v-motion-pop :delay="400" class="py-2 border-b-2 border-bluee-sec w-full text-center">
-            <RouterLink to="/"> العلامات التجارية </RouterLink>
+            <RouterLink to="/products"> المنتجات</RouterLink>
           </li>
           <li v-motion-pop :delay="600" class="py-2 border-b-2 border-bluee-sec w-full text-center">
             <RouterLink to="/"> المركز الأعلامي </RouterLink>
