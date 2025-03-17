@@ -30,8 +30,8 @@ const closeModal = () => {
     <div class="hidden lg:block"><NavBar></NavBar></div>
 
     <div>
-      <div class="w-4/5 h-[50vh] bg-yellow-400 mx-auto my-10 rounded-lg overflow-hidden">
-        <img src="../assets/imgs/bg3.webp" alt="" />
+      <div class="w-4/5 md:h-[50vh] bg-yellow-400 mx-auto my-10 rounded-lg overflow-hidden">
+        <img class="" src="../assets/imgs/bg3.webp" alt="" />
       </div>
       <div class="w-4/5 mx-auto">
         <p class="text-3xl text-black font-Tajawal">ماذا تقدم لكم مشيد ؟</p>

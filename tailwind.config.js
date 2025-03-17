@@ -15,6 +15,7 @@ export default {
       colors: {
         primary: '#C50000', // Replace with your desired color
         secandry: '#FEEB00', // Replace with your desired color
+        secandry_200: '#FEEB00', // Replace with your desired color
       },
     },
   },

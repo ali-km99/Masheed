@@ -1,12 +1,12 @@
 <template>
   <div class="p-4 min-h-screen">
     <h1
-      class="text-5xl font-bold mb-4 text-center p-4 text-primary"
+      class="text-5xl font-bold mb-4 text-center p-4 text-secandry"
       v-motion-slide-visible-bottom
       :delay="200"
       :duration="1000"
     >
-      دعونا نبقى على تواصل
+      دعونا نبقى على <span class="text-primary">تواصل</span>
     </h1>
     <p class="text-black text-center" dir="rtl">
       لم يكن التواصل مع مشيد بهذه السهولة من قبل. اتصل بنا أو أرسل بريدًا إلكترونيًا وسنرد عليك في
@@ -15,24 +15,24 @@
 
     <div class="md:grid grid-cols-3 gap-4 m-6 p-6">
       <div class="flex items-center justify-center flex-col">
-        <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
+        <div class="bg-secandry size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/mail2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">Email</p>
+        <p class="text-secandry text-3xl text-center my-3 font-bold">Email</p>
         <p class="text-black text-center">contact@Masheed.com</p>
       </div>
       <div class="flex items-center justify-center flex-col">
-        <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
+        <div class="bg-secandry size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/phone2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">Phone</p>
+        <p class="text-secandry text-3xl text-center my-3 font-bold">Phone</p>
         <p class="text-black text-center">+7-843-672-431</p>
       </div>
       <div class="flex items-center justify-center flex-col">
-        <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
-          <img src="../assets/icons/Vector.png" alt="" />
+        <div class="bg-secandry size-14 rounded-full flex p-2 items-center justify-center my-3">
+          <img src="../assets/icons/youtube.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">Socials</p>
+        <p class="text-secandry text-3xl text-center my-3 font-bold">Socials</p>
         <div class="flex gap-2 items-center">
           <a href="facebook.com"><img src="../assets/icons/insta.png" alt="" /></a>
           <a href="instagrm.com"><img src="../assets/icons/facebook.png" alt="" /></a>
