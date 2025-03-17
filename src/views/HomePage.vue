@@ -139,7 +139,7 @@
 
       <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
-          class="w-20 h-20 rounded-full bg-secandry flex items-center justify-center absolute -top-10"
+          class="w-20 h-20 rounded-full bg-primary flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/hook.png" alt="" />
         </div>
