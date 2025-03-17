@@ -9,20 +9,6 @@ const toggelMinu = () => {
     minu.value = !minu.value
   }
 }
-import { useRouter } from 'vue-router' // استيراد Vue Router
-
-// تعريف أنواع الحدث باستخدام TypeScript
-const emit = defineEmits<{
-  scrollToSection: []
-}>()
-
-const router = useRouter()
-
-// التنقل وإرسال الحدث
-const handleNavigation = (): void => {
-  emit('scrollToSection') // إرسال الحدث مع الـ ID
-  router.replace('/') // الانتقال إلى الصفحة الرئيسية
-}
 </script>
 
 <template>
@@ -80,7 +66,6 @@ const handleNavigation = (): void => {
           </li>
 
           <li
-            @click="handleNavigation"
             v-motion-pop
             :delay="1000"
             class="py-2 border-b-2 border-bluee-sec w-full text-center"
