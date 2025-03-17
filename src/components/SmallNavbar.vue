@@ -65,15 +65,15 @@ const handleNavigation = (): void => {
           <!-- <li class="py-2 border-b-2 border-bluee-sec w-full text-center"> -->
 
           <li v-motion-pop class="py-2 border-b-2 border-bluee-sec w-full text-center rounded-t-lg">
-            <RouterLink to="/"> الرئيسية </RouterLink>
+            <RouterLink :to="{ name: 'home' }"> الرئيسية </RouterLink>
           </li>
 
           <li v-motion-pop :delay="200" class="py-2 border-b-2 border-bluee-sec w-full text-center">
-            <RouterLink to="/"> حول </RouterLink>
+            <RouterLink :to="{ name: 'about' }"> حول </RouterLink>
           </li>
 
           <li v-motion-pop :delay="400" class="py-2 border-b-2 border-bluee-sec w-full text-center">
-            <RouterLink to="/products"> المنتجات</RouterLink>
+            <RouterLink :to="{ name: 'products' }"> المنتجات</RouterLink>
           </li>
           <li v-motion-pop :delay="600" class="py-2 border-b-2 border-bluee-sec w-full text-center">
             <RouterLink to="/"> المركز الأعلامي </RouterLink>
@@ -85,7 +85,7 @@ const handleNavigation = (): void => {
             :delay="1000"
             class="py-2 border-b-2 border-bluee-sec w-full text-center"
           >
-            <RouterLink to="/contact"> تواصل معنا </RouterLink>
+            <RouterLink :to="{ name: 'contact' }"> تواصل معنا </RouterLink>
           </li>
         </ul>
       </section>
