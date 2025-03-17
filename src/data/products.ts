@@ -1,23 +1,99 @@
-export const productsData = {
-  Waterproofing: {
-    mainImg: 'url',
+import type { ProductCategory } from '@/types/products'
+
+export const productsData: ProductCategory[] = [
+  {
+    id: 'Waterproofing',
+    mainImg: 'https://i.postimg.cc/9z3S9yxZ/product1.jpg',
     name: 'عوازل مائية - Waterproofing',
-    text: 'إن الجدران الخرسانية أو الجدران المجوفة ليست كافية لضمان العزل المائي الكامل وتجنب تسرب المياه في حمامات السباحة، كما أن الشقوق التي قد تحدث في الخرسانة تسهل أيضًا تسرب المياه. إن تثبيت البلاط على سطح حمام السباحة لا يوفر عزلًا للمياه في حد ذاته.',
+    text: 'إن الجدران الخرسانية أو الجدران المجوفة ليست كافية لضمان العزل المائي الكامل...',
     products: [
       {
         name: 'weber silicone FS',
         title: 'مادة مانعة للتسرب من السيليكون عالية الأداء لمنع الحرائق',
-        type: ['الحائط ', 'الأرضية', 'السقف'],
-        img: 'url',
-        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون،
-         مقاوم للحريق ومقاوم للعوامل الجوية، مصنوع من تركيبة
-         سيليكون مقاومة للحريق. صُمم هذا المانع التسرب بشكل
-         مناسب باستخدام إضافات ومواد كيميائية خاصة. يتميز
-        المنتج بمقاومته للحريق والعوامل الجوية والميكروبات،
-         وسهولة استخدامه. يُحكم غلق الوصلات الداخلية
-         والخارجية بين أجزاء البناء المعرضة للحركة بفعالية. يساعد
-         Weber Silicone FS على حماية الاختراقات القابلة للاشتعال وغير القابلة للاشتعال لمدة تصل إلى 4 ساعات من مقاومة الحريق. يمكن استخدام هذا المنتج لسد جميع وصلات الحركة بنسبة تصل إلى 50%، ويمنع مرور الحريق والدخان من غرفة إلى أخرى، ويمنع تسربهما إلى مخارج الطوارئ. ولأنه يحتوي على نسبة منخفضة من المركبات العضوية المتطايرة، فهو سهل الاستخدام، ويتوافق مع متطلبات المباني الخضراء.`,
+        type: ['الحائط', 'الأرضية', 'السقف'],
+        img: 'https://i.postimg.cc/dVRM8Sc1/product10.jpg',
+        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون...`,
+      },
+      {
+        name: 'weber silicone FS',
+        title: 'مادة مانعة للتسرب من السيليكون عالية الأداء لمنع الحرائق',
+        type: ['الحائط', 'الأرضية', 'السقف'],
+        img: 'https://i.postimg.cc/c1jNZncs/product11.jpg',
+        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون...`,
+      },
+      {
+        name: 'weber silicone FS',
+        title: 'مادة مانعة للتسرب من السيليكون عالية الأداء لمنع الحرائق',
+        type: ['الحائط', 'الأرضية', 'السقف'],
+        img: 'https://i.postimg.cc/jd7YjS8y/product12.jpg',
+        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون...`,
+      },
+      {
+        name: 'weber silicone FS',
+        title: 'مادة مانعة للتسرب من السيليكون عالية الأداء لمنع الحرائق',
+        type: ['الحائط', 'الأرضية', 'السقف'],
+        img: 'https://i.postimg.cc/xCCWVfJJ/product4.jpg',
+        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون...`,
+      },
+      {
+        name: 'weber silicone FS',
+        title: 'مادة مانعة للتسرب من السيليكون عالية الأداء لمنع الحرائق',
+        type: ['الحائط', 'الأرضية', 'السقف'],
+        img: 'https://i.postimg.cc/HxhFpqXS/product3.jpg',
+        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون...`,
+      },
+      {
+        name: 'weber silicone FS',
+        title: 'مادة مانعة للتسرب من السيليكون عالية الأداء لمنع الحرائق',
+        type: ['الحائط', 'الأرضية', 'السقف'],
+        img: 'https://i.postimg.cc/vmMskwtf/product20.jpg',
+        text: `Weber Silicone FS هو مانع تسرب عالي الأداء أحادي المكون...`,
       },
     ],
   },
-}
+  {
+    id: 'Tile fixing',
+    mainImg: 'https://i.postimg.cc/mDgGZ3qr/product15.jpg',
+    name: 'تثبيت البلاط - Tile fixing',
+    text: 'تثبيت البلاط يتطلب مواد متخصصة لضمان الجودة والاستدامة...',
+    products: [
+      {
+        name: 'tile adhesive X1',
+        title: 'لاصق بلاط عالي القوة',
+        type: ['الأرضية', 'الجدران'],
+        img: 'url',
+        text: 'لاصق بلاط عالي الأداء يتميز بقوة التصاق ممتازة ومقاومة للرطوبة.',
+      },
+    ],
+  },
+  {
+    id: 'Tile fixing',
+    mainImg: 'https://i.postimg.cc/Z5ztvzg2/product19.png',
+    name: 'تثبيت البلاط - Tile fixing',
+    text: 'تثبيت البلاط يتطلب مواد متخصصة لضمان الجودة والاستدامة...',
+    products: [
+      {
+        name: 'tile adhesive X1',
+        title: 'لاصق بلاط عالي القوة',
+        type: ['الأرضية', 'الجدران'],
+        img: 'https://i.postimg.cc/Z5ztvzg2/product19.png',
+        text: 'لاصق بلاط عالي الأداء يتميز بقوة التصاق ممتازة ومقاومة للرطوبة.',
+      },
+    ],
+  },
+  {
+    id: 'Tile fixing',
+    mainImg: 'https://i.postimg.cc/8CHSVXZ3/product18.jpg',
+    name: 'تثبيت البلاط - Tile fixing',
+    text: 'تثبيت البلاط يتطلب مواد متخصصة لضمان الجودة والاستدامة...',
+    products: [
+      {
+        name: 'tile adhesive X1',
+        title: 'لاصق بلاط عالي القوة',
+        type: ['الأرضية', 'الجدران'],
+        img: 'url',
+        text: 'لاصق بلاط عالي الأداء يتميز بقوة التصاق ممتازة ومقاومة للرطوبة.',
+      },
+    ],
+  },
+]

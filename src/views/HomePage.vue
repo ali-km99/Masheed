@@ -6,7 +6,7 @@
     <div class="relative"><SmallNavbar /></div>
     <div class="hidden lg:block"><NavBar></NavBar></div>
     <section
-      class="text-white md:p-8 p-4 font-Tajawal font-[900] bg-black/65 md:w-3/4 mx-8 my-4"
+      class="text-white md:p-8 p-4 font-Tajawal font-[900] bg-gray-800/65 md:w-3/4 mx-8 my-4"
       dir="rtl"
     >
       <div
@@ -40,27 +40,27 @@
           v-motion-slide-top
           :delay="1500"
           :duration="500"
-          class="border-white border-2 p-4 rounded-md hover:bg-primary/80 duration-500 hover:border-transparent"
+          class="border-secandry border-2 p-4 rounded-md hover:bg-secandry/80 duration-500 hover:border-transparent"
         >
           حول المشيد
         </button>
       </div>
     </section>
   </div>
-  <section class="bg-[#1e1e1e] h-screen">
-    <div class="mb-12">
-      <h2 class="text-center text-4xl text-white p-2">تعرف على عملائنا</h2>
-      <p class="text-center text-slate-300 p-2">لقد تعاملنا مع 120+ شركة ليبية و عالميا</p>
+  <section class="bg-white">
+    <div class="">
+      <h2 class="text-center text-4xl text-black font-cairo p-2">تعرف على عملائنا</h2>
+      <p class="text-center text-slate-700 p-2">لقد تعاملنا مع 120+ شركة ليبية و عالميا</p>
     </div>
     <swiper
       :modules="[Navigation, Pagination, Autoplay]"
-      :slides-per-view="3"
+      :slides-per-view="5"
       :space-between="10"
       :loop="true"
       :autoplay="{ delay: 3000, disableOnInteraction: false }"
       :navigation="true"
       :pagination="{ clickable: true }"
-      class="w-full h-[60vh]"
+      class="w-full h-[40vh]"
       :breakpoints="{
         320: { slidesPerView: 1, spaceBetween: 10 }, // موبايل
         640: { slidesPerView: 2, spaceBetween: 15 }, // تابلت
@@ -68,7 +68,9 @@
       }"
     >
       <swiper-slide v-for="program in programs" :key="program.id" class="px-12 drop-shadow-md">
-        <div class=""><img :src="program.image" class="h-72 w-72 rounded-full" /></div>
+        <div class="w-52 h-52 mx-auto mt-6">
+          <img :src="program.image" class="rounded-[50%] w-52 h-52" />
+        </div>
       </swiper-slide>
     </swiper>
     <div class="flex">
@@ -80,36 +82,40 @@
     </div>
   </section>
   <section dir="rtl">
-    <div class="p-4 m-4">
-      <h1
-        v-motion-slide-right
-        :delay="200"
-        :duration="1200"
-        class="text-6xl text-red-600 font-semibold"
-      >
-        01
-      </h1>
-      <div v-motion-slide-right :delay="600" :duration="1200">
-        <h1 class="text-6xl text-white font-semibold">من نحن ؟</h1>
+    <div
+      class="md:bg-home bg-homeSM bg-no-repeat md:bg-right-top md:bg-cover bg-center bg-contain bg-fixed"
+    >
+      <div class="bg-gray-800/65 md:w-1/3 w-full p-4">
+        <h1
+          v-motion-slide-right
+          :delay="200"
+          :duration="1200"
+          class="text-6xl text-red-600 font-semibold"
+        >
+          01
+        </h1>
+        <div v-motion-slide-right :delay="600" :duration="1200">
+          <h1 class="text-6xl text-white font-semibold">من نحن ؟</h1>
+        </div>
+        <p
+          v-motion-slide-top
+          :delay="800"
+          :duration="1200"
+          class="text-white mt-4 leading-loose text-lg"
+        >
+          شركة المشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
+          المختلفة. نتميز بتقديم حلول هندسية متطورة بجودة عالية، بالتعاون مع أفضل الشركات العالمية.
+          هدفنا تلبية متطلبات السوق عبر شبكة توزيع تغطي مختلف المدن الليبية.
+        </p>
+        <RouterLink to="/about" class="hover:text-red-900 duration-300 text-red-600">
+          حول مشيد >
+        </RouterLink>
       </div>
-      <p
-        v-motion-slide-top
-        :delay="800"
-        :duration="1200"
-        class="text-white lg:w-1/3 mt-4 leading-loose text-lg"
-      >
-        شركة المشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
-        المختلفة. نتميز بتقديم حلول هندسية متطورة بجودة عالية، بالتعاون مع أفضل الشركات العالمية.
-        هدفنا تلبية متطلبات السوق عبر شبكة توزيع تغطي مختلف المدن الليبية.
-      </p>
-      <RouterLink to="/" class="hover:text-red-900 duration-300 text-red-600">
-        حول مشيد >
-      </RouterLink>
     </div>
-    <div class="w-full grid lg:grid-cols-4 grid-cols-1 gap-6 m-6 p-4 py-20 mx-auto bg-mygradient">
-      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
+    <div class="w-full grid lg:grid-cols-4 grid-cols-1 gap-6 m-6 p-4 py-20 mx-auto bg-white">
+      <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
-          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+          class="w-20 h-20 rounded-full bg-primary flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/consultation.png" alt="" />
         </div>
@@ -119,9 +125,9 @@
           ينفذون العديد من المشاريع الحيوية والتي تشمل مشاريع البنية التحتية في ليبيا.
         </p>
       </div>
-      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
+      <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
-          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+          class="w-20 h-20 rounded-full bg-secandry flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/oil-pump.png" alt="" />
         </div>
@@ -131,9 +137,9 @@
         </p>
       </div>
 
-      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
+      <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
-          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+          class="w-20 h-20 rounded-full bg-secandry flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/hook.png" alt="" />
         </div>
@@ -143,9 +149,9 @@
           التركيز على تحسين الكفاءة لضمان أفضل النتائج في مجال كيماويات البناء.
         </p>
       </div>
-      <div class="w-full bg-[#1E1E1E] h-72 flex flex-col items-center rounded-lg relative p-2">
+      <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
-          class="w-20 h-20 rounded-full bg-white flex items-center justify-center absolute -top-10"
+          class="w-20 h-20 rounded-full bg-secandry flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/factory.png" alt="" />
         </div>
@@ -169,13 +175,13 @@
         02
       </h1>
       <div v-motion-slide-right :delay="400" :duration="1000">
-        <h1 class="text-6xl text-white font-semibold">خدماتنا</h1>
+        <h1 class="text-6xl text-black font-semibold">خدماتنا</h1>
       </div>
       <p
         v-motion-slide-top
         :delay="600"
         :duration="800"
-        class="text-white lg:w-4/5 mt-4 leading-loose text-lg"
+        class="text-black lg:w-4/5 mt-4 leading-loose"
       >
         تولي شركة المشيد أولوية لتكون قريبة من زبائنها وتفهم احتيجاتهم وحل مشاكلهم كمانقدم منتجات
         مبتكرة و متطورة ونسعى دائما إلى زيادة كفائة منتجاتنا لنضمن أفضل النتائج الممكنة , حيث نقدم
@@ -184,7 +190,7 @@
     </div>
     <div class="flex mb-20">
       <div class="w-11/12 rounded-lg m-4 mx-auto bg-contain bg-home">
-        <div class="bg-[#3a3a3a]/[53%] backdrop-blur-0 w-full p-6">
+        <div class="bg-[#3a3a3a]/[53%] backdrop-blur-0 w-full">
           <Swiper
             :modules="[Navigation]"
             :loop="true"
@@ -194,7 +200,7 @@
             <swiper-slide
               v-for="program in programs2"
               :key="program.id"
-              class="px-12 drop-shadow-md"
+              class="md:px-12 drop-shadow-md"
             >
               <div class="flex flex-col md:flex-row justify-around w-full items-center">
                 <div class="md:w-1/3 rounded-md m-4 p-4 min-w-[300px] bg-black/65 md:h-[500px]">
@@ -236,22 +242,24 @@
         03
       </h1>
       <div v-motion-slide-right :delay="400" :duration="1000">
-        <h1 class="text-6xl text-white font-semibold">التواصل معنا</h1>
+        <h1 class="text-6xl text-black font-semibold">التواصل معنا</h1>
       </div>
       <p
         v-motion-slide-top
         :delay="600"
         :duration="800"
-        class="text-white lg:w-4/5 mt-4 leading-loose text-lg"
+        class="text-black lg:w-4/5 mt-4 leading-loose text-lg"
       >
         فريق مشيد سعيد بخدمتكم في أي وقت. لأي استفسار بإمكانك التواصل معنا:
       </p>
-      <button
-        class="text-white h-14 w-36 ml-16 mt-4 bg-gradient-to-r mb-10 from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
-      >
-        تواصل معنا
-      </button>
 
+      <RouterLink to="/contact">
+        <button
+          class="text-white h-14 w-36 ml-16 mt-4 bg-gradient-to-r mb-10 from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
+        >
+          تواصل معنا
+        </button>
+      </RouterLink>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.905542470924!2d13.242031175127021!3d32.90066557765773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8930012b75501%3A0x9e29a815306fd94a!2z2YXYtNmK2K8g2YTZhNmD2YrZhdin2YjZitin2Ko!5e0!3m2!1sen!2sly!4v1741404910451!5m2!1sen!2sly"
         width="1300"
@@ -371,11 +379,10 @@ const programs2 = ref([
 </script>
 <style>
 .bg-mygradient {
-  background-color: #ff0808;
-  background-image: linear-gradient(45deg, #ff0808 0%, #9f0000 74%);
+  background-image: linear-gradient(135deg, #fffc49 10%, #feeb00 100%);
 }
 body {
-  background: #1e1e1e;
+  background: #fefefe;
 }
 ::-webkit-scrollbar {
   width: 12px;
