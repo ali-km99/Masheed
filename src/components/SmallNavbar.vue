@@ -85,7 +85,7 @@ const handleNavigation = (): void => {
             :delay="1000"
             class="py-2 border-b-2 border-bluee-sec w-full text-center"
           >
-            <a href="/#contact"> تواصل معنا</a>
+            <RouterLink to="/contact"> تواصل معنا </RouterLink>
           </li>
         </ul>
       </section>
