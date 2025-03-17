@@ -61,7 +61,7 @@ export const productsData: ProductCategory[] = [
         name: 'tile adhesive X1',
         title: 'لاصق بلاط عالي القوة',
         type: ['الأرضية', 'الجدران'],
-        img: 'url',
+        img: 'https://i.postimg.cc/mDgGZ3qr/product15.jpg',
         text: 'لاصق بلاط عالي الأداء يتميز بقوة التصاق ممتازة ومقاومة للرطوبة.',
       },
     ],
