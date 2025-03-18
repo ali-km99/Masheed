@@ -34,7 +34,7 @@
               <h2
                 v-motion-slide-visible-top
                 :duration="1000"
-                class="md:text-3xl text-lg font-semibold text-primary text-right"
+                class="md:text-4xl text-lg font-semibold text-primary text-right"
               >
                 {{ program.titele }}
               </h2>
