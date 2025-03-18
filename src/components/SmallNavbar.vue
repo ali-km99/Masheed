@@ -62,7 +62,7 @@ const toggelMinu = () => {
             <RouterLink :to="{ name: 'products' }"> المنتجات</RouterLink>
           </li>
           <li v-motion-pop :delay="600" class="py-2 border-b-2 border-bluee-sec w-full text-center">
-            <RouterLink to="/"> المركز الأعلامي </RouterLink>
+            <RouterLink to="/Portfolio"> أعمالنا </RouterLink>
           </li>
 
           <li

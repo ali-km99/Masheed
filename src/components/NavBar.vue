@@ -6,7 +6,7 @@
       <RouterLink to="/about" class="hover:text-primary duration-300 p-3"> حول </RouterLink>
 
       <RouterLink to="/products" class="hover:text-primary duration-300 p-3"> المنتجات </RouterLink>
-      <RouterLink to="/" class="hover:text-primary duration-300 p-3"> المركز الأعلامي </RouterLink>
+      <RouterLink to="/Portfolio" class="hover:text-primary duration-300 p-3"> أعمالنا </RouterLink>
       <RouterLink
         to="/contact"
         class="duration-500 border-primary border-[3px] p-3 rounded-lg hover:bg-primary mr-6"
