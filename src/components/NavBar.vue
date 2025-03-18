@@ -9,10 +9,11 @@
       <RouterLink to="/" class="hover:text-primary duration-300 p-3"> المركز الأعلامي </RouterLink>
       <RouterLink
         to="/contact"
-        class="duration-500 border-secandry border-2 p-3 rounded-lg hover:bg-secandry mr-6"
+        class="duration-500 border-primary border-[3px] p-3 rounded-lg hover:bg-primary mr-6"
       >
         تواصل معنا
       </RouterLink>
     </div>
+    <img width="180" class="mr-8" src="../assets/imgs/weberLogo.png" alt="" />
   </nav>
 </template>

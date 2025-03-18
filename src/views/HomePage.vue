@@ -42,7 +42,7 @@
           :duration="500"
           class="border-secandry border-2 p-4 rounded-md hover:bg-secandry/80 duration-500 hover:border-transparent"
         >
-          حول المشيد
+          حول مشيد
         </button>
       </div>
     </section>
@@ -103,7 +103,7 @@
           :duration="1200"
           class="text-white mt-4 leading-loose text-lg"
         >
-          شركة المشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
+          شركة مشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
           المختلفة. نتميز بتقديم حلول هندسية متطورة بجودة عالية، بالتعاون مع أفضل الشركات العالمية.
           هدفنا تلبية متطلبات السوق عبر شبكة توزيع تغطي مختلف المدن الليبية.
         </p>
@@ -121,7 +121,7 @@
         </div>
         <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">خدمات استشارية</h2>
         <p class="text-center mt-2 text-white">
-          تقدم شركة المشيد للكيماويات الاستشارات الفنية للعديد من الشركات والعملاء والمقاولين الذين
+          تقدم شركة مشيد للكيماويات الاستشارات الفنية للعديد من الشركات والعملاء والمقاولين الذين
           ينفذون العديد من المشاريع الحيوية والتي تشمل مشاريع البنية التحتية في ليبيا.
         </p>
       </div>
@@ -133,7 +133,7 @@
         </div>
         <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">النفط و الغاز</h2>
         <p class="text-center mt-2 text-white">
-          تقدم شركة المشيد أفضل الحلول المتكاملة بما في ذلك التقنيات والمواد الكيميائية
+          تقدم شركة مشيد أفضل الحلول المتكاملة بما في ذلك التقنيات والمواد الكيميائية
         </p>
       </div>
 
@@ -145,7 +145,7 @@
         </div>
         <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">البناء</h2>
         <p class="text-center mt-2 text-white">
-          تسعى شركة المشيد لفهم احتياجات عملائها وتقديم حلول فعالة من خلال منتجات مبتكرة ومتطورة، مع
+          تسعى شركة مشيد لفهم احتياجات عملائها وتقديم حلول فعالة من خلال منتجات مبتكرة ومتطورة، مع
           التركيز على تحسين الكفاءة لضمان أفضل النتائج في مجال كيماويات البناء.
         </p>
       </div>
@@ -183,7 +183,7 @@
         :duration="800"
         class="text-black lg:w-4/5 mt-4 leading-loose"
       >
-        تولي شركة المشيد أولوية لتكون قريبة من زبائنها وتفهم احتيجاتهم وحل مشاكلهم كمانقدم منتجات
+        تولي شركة مشيد أولوية لتكون قريبة من زبائنها وتفهم احتيجاتهم وحل مشاكلهم كمانقدم منتجات
         مبتكرة و متطورة ونسعى دائما إلى زيادة كفائة منتجاتنا لنضمن أفضل النتائج الممكنة , حيث نقدم
         الحلول الأتية في مجال كيماويات البناء .
       </p>
@@ -231,6 +231,41 @@
       </div>
     </div>
   </section>
+  <section dir="rtl" class="my-20">
+    <div class="flex w-full justify-between shadow-inner bg-slate-200 flex-col md:flex-row">
+      <div class="pr-6 lg:w-1/2 py-4">
+        <h1
+          v-motion-slide-right
+          :delay="200"
+          :duration="1200"
+          class="text-6xl text-red-600 font-semibold"
+        >
+          03
+        </h1>
+        <div v-motion-slide-right :delay="400" :duration="1000">
+          <h1 class="text-5xl text-black font-semibold pb-2">نحن الوكيل الرسمي</h1>
+          <h1 class="text-5xl text-black font-semibold">لشركة Weber العالمية</h1>
+        </div>
+        <p
+          v-motion-slide-top
+          :delay="600"
+          :duration="800"
+          class="text-black lg:w-3/4 leading-loose text-lg mt-2"
+        >
+          تفخر شركتنا بكونها الوكيل الرسمي والمعتمد لشركة Weber العالمية في ليبيا، الرائدة في مجال
+          العوازل والبتروكيماويات. نقدم لعملائنا في السوق الليبي أحدث المنتجات والتقنيات المتطورة
+          التي تلبي أعلى معايير الجودة والكفاءة. بفضل شراكتنا مع Weber، نوفر حلولًا متكاملة للعزل
+          المائي والحراري، والمواد البتروكيماوية التي تضمن أداءً فائقًا واستدامة طويلة الأمد، مما
+          يسهم في تطوير البنية التحتية وتعزيز الجودة في المشاريع المختلفة داخل ليبيا.
+        </p>
+      </div>
+      <div
+        class="md:w-1/3 h-[25vh] md:h-full bg-secandry pr-6 p-12 flex justify-center items-center"
+      >
+        <img class="w-3/4" src="../assets/imgs/weber3.png" alt="" />
+      </div>
+    </div>
+  </section>
   <section dir="rtl" class="my-12">
     <div class="lg:w-1/2 px-6">
       <h1
@@ -239,7 +274,7 @@
         :duration="1200"
         class="text-6xl text-red-600 font-semibold"
       >
-        03
+        04
       </h1>
       <div v-motion-slide-right :delay="400" :duration="1000">
         <h1 class="text-6xl text-black font-semibold">التواصل معنا</h1>

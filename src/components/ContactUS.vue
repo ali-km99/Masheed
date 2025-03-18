@@ -19,7 +19,7 @@
           <img src="../assets/icons/mail2.png" alt="" />
         </div>
         <p class="text-secandry text-3xl text-center my-3 font-bold">Email</p>
-        <p class="text-black text-center">contact@Masheed.com</p>
+        <p class="text-black text-center">info@Masheed.ly</p>
       </div>
       <div class="flex items-center justify-center flex-col">
         <div class="bg-secandry size-14 rounded-full flex p-2 items-center justify-center my-3">
@@ -40,14 +40,15 @@
         </div>
       </div>
     </div>
-    <div class="bg-gradient-to-b flex justify-center p-6" dir="rtl">
+    <div class="flex justify-center p-6" dir="rtl">
       <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6148.152141239173!2d13.059472578192374!3d32.83720715060185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8e90059c9dbe1%3A0x422e36c9657e461!2z2YLZhtin2Kkg2KfZhNi02KjYp9io2YrYqQ!5e0!3m2!1sen!2sly!4v1740484104431!5m2!1sen!2sly"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d296.09286542008294!2d13.244557490193685!3d32.90059270702412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8930012b75501%3A0x9e29a815306fd94a!2z2YXYtNmK2K8g2YTZhNmD2YrZhdin2YjZitin2Ko!5e0!3m2!1sen!2sly!4v1742334264267!5m2!1sen!2sly"
         width="70%"
         height="400"
         style="border: 0"
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade"
+        class="rounded-lg"
       ></iframe>
     </div>
   </div>
