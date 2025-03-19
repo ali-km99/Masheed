@@ -12,45 +12,35 @@
               <RouterLink to="/" class="hover:text-black duration-200"> الصفحة الرئيسة </RouterLink>
             </li>
             <li class="my-2">
-              <RouterLink to="/about" class="hover:text-black duration-200">
-                العلامات التجارية
+              <RouterLink to="/about" class="hover:text-black duration-200"> المنتجات </RouterLink>
+            </li>
+            <li class="my-2">
+              <RouterLink to="/Portfolio" class="hover:text-black duration-200">
+                أعمالنا
               </RouterLink>
             </li>
             <li class="my-2">
-              <RouterLink to="/" class="hover:text-black duration-200">
-                المركز الأعلامي
-              </RouterLink>
-            </li>
-            <li class="my-2">
-              <RouterLink to="/Programs" class="hover:text-black duration-200"> حول </RouterLink>
+              <RouterLink to="/about" class="hover:text-black duration-200"> حول </RouterLink>
             </li>
           </ul>
-          <!-- <ul class="p-2 text-black/50">
-            <li class="my-2"><a href="">فريق العمل</a></li>
-            <li class="my-2"><a href="">الأستماع المباشر</a></li>
-            <li class="my-2"><a href="">الأعلان معنا</a></li>
-          </ul> -->
         </div>
       </div>
       <div class="h-full md:w-1/4">
         <h3 class="text-center text-primary p-3 mb-6 text-xl font-bold">التواصل</h3>
         <ul class="p-2 text-black/50">
-          <!-- <li class="my-2 flex items-center">
+          <li class="my-2 flex items-center">
             <img src="../assets/icons/phone2.png" class="size-7 mx-2" alt="" />
             <p dir="ltr">092 123 0000</p>
-          </li> -->
-          <!-- <li class="my-2 flex items-center">
-            <img src="../assets/icons/radio2.png" class="size-7 mx-2" alt="" />
-            <p dir="ltr">88.1</p>
-          </li> -->
+          </li>
+
           <li class="my-2 flex items-center">
             <img src="../assets/icons/mail2.png" class="size-7 mx-2" alt="" />
             <p dir="ltr">masheed@gmail.com</p>
           </li>
-          <!-- <li class="my-2 flex items-center">
+          <li class="my-2 flex items-center">
             <img src="../assets/icons/time2.png" class="size-7 mx-2" alt="" />
             <p>مواعيد العمل 8:00 ص - 9:00 م</p>
-          </li> -->
+          </li>
         </ul>
       </div>
     </div>

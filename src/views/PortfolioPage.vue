@@ -7,7 +7,7 @@
       :duration="1000"
       class="text-4xl font-bold text-primary text-center py-16"
     >
-      خدماتنا المتميزة
+      أعمالنا المتميزة
     </h1>
 
     <div class="flex flex-col">
@@ -57,9 +57,11 @@
       </div>
     </div>
   </div>
+  <FooterComp class="bg-gray-300" />
 </template>
 
 <script setup lang="ts">
+import FooterComp from '@/components/FooterComp.vue'
 import NavBar from '@/components/NavBar.vue'
 import SmallNavbar from '@/components/SmallNavbar.vue'
 import { ref } from 'vue'
