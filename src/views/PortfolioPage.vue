@@ -1,8 +1,7 @@
 <template>
-  <div dir="rtl" class="relative"><SmallNavbar /></div>
-  <div dir="rtl" class="hidden lg:block"><NavBar></NavBar></div>
-
   <div class="min-h-screen bg-white font-Tajawal">
+    <div dir="rtl" class="relative"><SmallNavbar /></div>
+    <div dir="rtl" class="hidden lg:block"><NavBar></NavBar></div>
     <h1
       v-motion-slide-visible-bottom
       :duration="1000"
@@ -16,7 +15,7 @@
         v-for="(program, index) in programs2"
         :key="program.id"
         class="min-h-screen flex items-center"
-        :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-400'"
+        :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-300'"
       >
         <div class="container mx-auto px-4">
           <div
@@ -34,7 +33,7 @@
               <h2
                 v-motion-slide-visible-top
                 :duration="1000"
-                class="md:text-4xl text-lg font-semibold text-primary text-right"
+                class="md:text-4xl text-2xl font-semibold text-primary text-right"
               >
                 {{ program.titele }}
               </h2>
@@ -45,6 +44,13 @@
               >
                 {{ program.decripicon }}
               </p>
+              <button
+                v-motion-slide-visible-bottom
+                :duration="1700"
+                class="hover:text-primarybg-red-600 text-white text-lg mx-auto p-2 px-6 m-2 bg-gradient-to-r from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
+              >
+                المنتجات
+              </button>
             </div>
           </div>
         </div>
