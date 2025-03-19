@@ -1,7 +1,7 @@
 <template>
-  <div class="p-4 min-h-screen">
+  <div class="p-4 min-h-screen font-Tajawal">
     <h1
-      class="text-5xl font-bold mb-4 text-center p-4 text-primary"
+      class="text-5xl font-bold mb-4 text-center p-4 text-primary font-Tajawal"
       v-motion-slide-visible-bottom
       :delay="200"
       :duration="1000"
@@ -13,7 +13,7 @@
       أقرب وقت ممكن !
     </p>
 
-    <div class="md:grid grid-cols-3 gap-4 m-6 p-6">
+    <div class="md:grid grid-cols-3 gap-4 m-6 p-6 font-Tajawal">
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/mail2.png" alt="" />
@@ -25,18 +25,18 @@
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/phone2.png" alt="" />
         </div>
-        <p class="text-primbg-primary text-3xl text-center my-3 font-bold">Phone</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">Phone</p>
         <p class="text-black text-center">+7-843-672-431</p>
       </div>
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
-          <img src="../assets/icons/youtube.png" alt="" />
+          <img src="../assets/icons/internet.png" alt="" />
         </div>
-        <p class="text-primbg-primary text-3xl text-center my-3 font-bold">Socials</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">Socials</p>
         <div class="flex gap-2 items-center">
-          <a href="facebook.com"><img src="../assets/icons/insta.png" alt="" /></a>
-          <a href="instagrm.com"><img src="../assets/icons/facebook.png" alt="" /></a>
-          <a href="youtube.com"><img src="../assets/icons/youtube.png" alt="" /></a>
+          <a href="facebook.com"><img width="35px" src="../assets/icons/instagram.png" alt="" /></a>
+          <a href="instagrm.com"><img width="35px" src="../assets/icons/facebook.png" alt="" /></a>
+          <a href="youtube.com"><img width="35px" src="../assets/icons/youtube.png" alt="" /></a>
         </div>
       </div>
     </div>

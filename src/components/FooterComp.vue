@@ -29,16 +29,16 @@
         <h3 class="text-center text-primary p-3 mb-6 text-xl font-bold">التواصل</h3>
         <ul class="p-2 text-black/50">
           <li class="my-2 flex items-center">
-            <img src="../assets/icons/phone2.png" class="size-7 mx-2" alt="" />
+            <img src="../assets/icons/redPhonr.png" class="size-7 mx-2" alt="" />
             <p dir="ltr">092 123 0000</p>
           </li>
 
           <li class="my-2 flex items-center">
-            <img src="../assets/icons/mail2.png" class="size-7 mx-2" alt="" />
+            <img src="../assets/icons/redMAIL.png" class="size-7 mx-2" alt="" />
             <p dir="ltr">masheed@gmail.com</p>
           </li>
           <li class="my-2 flex items-center">
-            <img src="../assets/icons/time2.png" class="size-7 mx-2" alt="" />
+            <img src="../assets/icons/redTime.png" class="size-7 mx-2" alt="" />
             <p>مواعيد العمل 8:00 ص - 9:00 م</p>
           </li>
         </ul>
@@ -48,8 +48,8 @@
     <div class="w-full h-5 justify-center items-center gap-2 flex my-6">
       <a href=""><img width="35px" src="../assets/icons/youtube.png" alt="" /></a>
       <a href=""><img width="35px" src="../assets/icons/facebook.png" alt="" /></a>
-      <a href=""><img width="35px" src="../assets/icons/insta.png" alt="" /></a>
+      <a href=""><img width="35px" src="../assets/icons/instagram.png" alt="" /></a>
     </div>
-    <p class="text-center text-white/50 mt-3 text-sm">© 2025 Masheed</p>
+    <p class="text-center text-black/50 mt-3 text-sm">© 2025 Masheed</p>
   </footer>
 </template>
