@@ -2,7 +2,7 @@
   <div dir="rtl" class="relative"><SmallNavbar /></div>
   <div dir="rtl" class="hidden lg:block"><NavBar></NavBar></div>
 
-  <div class="min-h-screen bg-gray-50">
+  <div class="min-h-screen bg-white font-Tajawal">
     <h1
       v-motion-slide-visible-bottom
       :duration="1000"
@@ -16,7 +16,7 @@
         v-for="(program, index) in programs2"
         :key="program.id"
         class="min-h-screen flex items-center"
-        :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-50'"
+        :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-400'"
       >
         <div class="container mx-auto px-4">
           <div
@@ -39,7 +39,7 @@
                 {{ program.titele }}
               </h2>
               <p
-                v-motion-slide-visible-left
+                v-motion-slide-visible-bottom
                 :duration="1000"
                 class="text-gray-700 md:text-xl leading-relaxed text-right"
               >
