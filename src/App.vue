@@ -6,4 +6,17 @@ import { RouterView } from 'vue-router'
   <RouterView />
 </template>
 
-<style scoped></style>
+<style>
+body {
+  font-family:
+    'Tajawal',
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+</style>

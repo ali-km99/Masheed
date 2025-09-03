@@ -59,7 +59,7 @@ const toggelMinu = () => {
           </li>
 
           <li v-motion-pop :delay="400" class="py-2 border-b-2 border-bluee-sec w-full text-center">
-            <RouterLink :to="{ name: 'products' }"> المنتجات</RouterLink>
+            <RouterLink :to="{ name: 'products' }"> حول weber</RouterLink>
           </li>
           <li v-motion-pop :delay="600" class="py-2 border-b-2 border-bluee-sec w-full text-center">
             <RouterLink to="/Portfolio"> أعمالنا </RouterLink>

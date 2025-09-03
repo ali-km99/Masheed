@@ -13,26 +13,33 @@
       أقرب وقت ممكن !
     </p>
 
-    <div class="md:grid grid-cols-3 gap-4 m-6 p-6 font-Tajawal">
+    <div class="md:grid grid-cols-4 gap-4 m-6 p-6 font-Tajawal">
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/mail2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">Email</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">البريد الأكتروني</p>
         <p class="text-black text-center">info@Masheed.ly</p>
+      </div>
+      <div class="flex items-center justify-center flex-col">
+        <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
+          <img src="../assets/icons/time2.png" alt="" />
+        </div>
+        <p class="text-primary text-3xl text-center my-3 font-bold">مواعيد العمل</p>
+        <p class="text-black text-center">مواعيد العمل 8:30 ص - 8:00 م</p>
       </div>
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/phone2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">Phone</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">هاتف</p>
         <p class="text-black text-center">+7-843-672-431</p>
       </div>
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/internet.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">Socials</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">تواصل اجتماعي</p>
         <div class="flex gap-2 items-center">
           <a href="facebook.com"><img width="35px" src="../assets/icons/instagram.png" alt="" /></a>
           <a href="instagrm.com"><img width="35px" src="../assets/icons/facebook.png" alt="" /></a>

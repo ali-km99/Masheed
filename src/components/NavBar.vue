@@ -5,7 +5,9 @@
       <RouterLink to="/" class="hover:text-primary duration-300 p-3"> الصفحة الرئيسة </RouterLink>
       <RouterLink to="/about" class="hover:text-primary duration-300 p-3"> حول </RouterLink>
 
-      <RouterLink to="/products" class="hover:text-primary duration-300 p-3"> المنتجات </RouterLink>
+      <RouterLink to="/products" class="hover:text-[#FFEB00] duration-300 p-3">
+        حول weber
+      </RouterLink>
       <RouterLink to="/Portfolio" class="hover:text-primary duration-300 p-3"> أعمالنا </RouterLink>
       <RouterLink
         to="/contact"
