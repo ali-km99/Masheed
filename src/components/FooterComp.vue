@@ -39,7 +39,7 @@
           </li>
           <li class="my-2 flex items-center">
             <img src="../assets/icons/redTime.png" class="size-7 mx-2" alt="" />
-            <p>مواعيد العمل 8:00 ص - 9:00 م</p>
+            <p>مواعيد العمل 8:30 ص - 8:00 م</p>
           </li>
         </ul>
       </div>
