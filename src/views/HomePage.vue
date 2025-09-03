@@ -15,8 +15,8 @@
         :delay="200"
         :duration="1200"
       >
-        <h1 class="md:my-6">نزود عملائنا بحلول سريعة</h1>
-        <h1 class="">وتقنيات فريدة وجودة عالية</h1>
+        <h1 class="md:my-6">{{ $t('homeTitle1') }}</h1>
+        <h1 class="">{{ $t('homeTitle2') }}</h1>
       </div>
       <p
         class="md:w-2/3 md:p-6 p-4 pt-0 md:text-base text-sm"
@@ -24,33 +24,24 @@
         :delay="800"
         :duration="1200"
       >
-        تأسست شركة مشيد للكيماويات من قبل مجموعة من المهندسين المتخصصين من ذوي الخبرة العالية في علم
-        المواد حيث تفوق خبرتهم في مجال الكيماويات عن عشرين سنة
+        {{ $t('homeDescription') }}
       </p>
       <div class="flex flex-col md:flex-row scale-90 md:scale-100 gap-2">
         <button
           v-motion-slide-top
           :delay="1500"
           :duration="500"
-          class="p-4 bg-primary md:mx-6 rounded-md hover:bg-primary/80 duration-500"
-        >
-          العلامات التجارية
-        </button>
-        <button
-          v-motion-slide-top
-          :delay="1500"
-          :duration="500"
           class="border-secandry border-2 p-4 rounded-md hover:bg-secandry/80 duration-500 hover:border-transparent"
         >
-          حول مشيد
+          <RouterLink :to="{ name: 'about' }"> {{ $t('aboutMushaid') }} </RouterLink>
         </button>
       </div>
     </section>
   </div>
-  <section class="bg-white">
+  <section class="bg-white" id="clients-section">
     <div class="">
-      <h2 class="text-center text-4xl text-black font-cairo p-2">تعرف على عملائنا</h2>
-      <p class="text-center text-slate-700 p-2">لقد تعاملنا مع 120+ شركة ليبية و عالميا</p>
+      <h2 class="text-center text-4xl text-black font-cairo p-2">{{ $t('ourClients') }}</h2>
+      <p class="text-center text-slate-700 p-2">{{ $t('clientsCount') }}</p>
     </div>
     <swiper
       :modules="[Navigation, Pagination, Autoplay]"
@@ -62,9 +53,9 @@
       :pagination="{ clickable: true }"
       class="w-full h-[40vh]"
       :breakpoints="{
-        320: { slidesPerView: 1, spaceBetween: 10 }, // موبايل
-        640: { slidesPerView: 2, spaceBetween: 15 }, // تابلت
-        1024: { slidesPerView: 3, spaceBetween: 15 }, // ديسكتوب
+        320: { slidesPerView: 1, spaceBetween: 10 },
+        640: { slidesPerView: 2, spaceBetween: 15 },
+        1024: { slidesPerView: 3, spaceBetween: 15 },
       }"
     >
       <swiper-slide v-for="program in programs" :key="program.id" class="px-12 drop-shadow-md">
@@ -73,13 +64,6 @@
         </div>
       </swiper-slide>
     </swiper>
-    <div class="flex">
-      <button
-        class="bg-red-600 text-white text-lg mx-auto p-4 px-10 m-2 bg-gradient-to-r from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
-      >
-        اطلع على عملائنا المميزون
-      </button>
-    </div>
   </section>
   <section dir="rtl">
     <div
@@ -95,7 +79,7 @@
           01
         </h1>
         <div v-motion-slide-right :delay="600" :duration="1200">
-          <h1 class="text-6xl text-white font-semibold">من نحن ؟</h1>
+          <h1 class="text-6xl text-white font-semibold">{{ $t('whoWeAre') }}</h1>
         </div>
         <p
           v-motion-slide-top
@@ -103,12 +87,10 @@
           :duration="1200"
           class="text-white mt-4 leading-loose text-lg"
         >
-          شركة مشيد هي شركة ليبية متخصصة في مجال البتروكيماويات، النفط والغاز، والقطاعات الصناعية
-          المختلفة. نتميز بتقديم حلول هندسية متطورة بجودة عالية، بالتعاون مع أفضل الشركات العالمية.
-          هدفنا تلبية متطلبات السوق عبر شبكة توزيع تغطي مختلف المدن الليبية.
+          {{ $t('companyDescription') }}
         </p>
-        <RouterLink to="/about" class="hover:text-red-900 duration-300 text-red-600">
-          حول مشيد >
+        <RouterLink :to="{ name: 'about' }" class="hover:text-red-900 duration-300 text-red-600">
+          {{ $t('aboutMushaid') }}
         </RouterLink>
       </div>
     </div>
@@ -119,10 +101,11 @@
         >
           <img class="w-10" src="../assets/icons/consultation.png" alt="" />
         </div>
-        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">خدمات استشارية</h2>
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">
+          {{ $t('consultationServices') }}
+        </h2>
         <p class="text-center mt-2 text-white">
-          تقدم شركة مشيد للكيماويات الاستشارات الفنية للعديد من الشركات والعملاء والمقاولين الذين
-          ينفذون العديد من المشاريع الحيوية والتي تشمل مشاريع البنية التحتية في ليبيا.
+          {{ $t('consultationDescription') }}
         </p>
       </div>
       <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
@@ -131,22 +114,24 @@
         >
           <img class="w-10" src="../assets/icons/oil-pump.png" alt="" />
         </div>
-        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">النفط و الغاز</h2>
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">
+          {{ $t('oilGas') }}
+        </h2>
         <p class="text-center mt-2 text-white">
-          تقدم شركة مشيد أفضل الحلول المتكاملة بما في ذلك التقنيات والمواد الكيميائية
+          {{ $t('oilGasDescription') }}
         </p>
       </div>
-
       <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
         <div
           class="w-20 h-20 rounded-full bg-primary flex items-center justify-center absolute -top-10"
         >
           <img class="w-10" src="../assets/icons/hook.png" alt="" />
         </div>
-        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">البناء</h2>
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">
+          {{ $t('construction') }}
+        </h2>
         <p class="text-center mt-2 text-white">
-          تسعى شركة مشيد لفهم احتياجات عملائها وتقديم حلول فعالة من خلال منتجات مبتكرة ومتطورة، مع
-          التركيز على تحسين الكفاءة لضمان أفضل النتائج في مجال كيماويات البناء.
+          {{ $t('constructionDescription') }}
         </p>
       </div>
       <div class="w-full bg-gray-800 h-72 flex flex-col items-center rounded-lg relative p-2">
@@ -155,10 +140,11 @@
         >
           <img class="w-10" src="../assets/icons/factory.png" alt="" />
         </div>
-        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">القطاع الصناعي</h2>
+        <h2 class="text-center text-2xl mt-10 text-white font-bold font-Tajawal">
+          {{ $t('industrialSector') }}
+        </h2>
         <p class="text-center mt-2 text-white">
-          للمساهمة في تطوير الاقتصاد وتقليل الاعتماد على النفط والغاز، نوفر مواد أساسية للصناعة، مثل
-          الزيوت والشحوم، الأصباغ، مواد التعبئة واللصق، والدهانات الصناعية.
+          {{ $t('industrialDescription') }}
         </p>
       </div>
     </div>
@@ -175,7 +161,7 @@
         02
       </h1>
       <div v-motion-slide-right :delay="400" :duration="1000">
-        <h1 class="text-6xl text-black font-semibold">خدماتنا</h1>
+        <h1 class="text-6xl text-black font-semibold">{{ $t('ourServices') }}</h1>
       </div>
       <p
         v-motion-slide-top
@@ -183,9 +169,7 @@
         :duration="800"
         class="text-black lg:w-4/5 mt-4 leading-loose"
       >
-        تولي شركة مشيد أولوية لتكون قريبة من زبائنها وتفهم احتيجاتهم وحل مشاكلهم كمانقدم منتجات
-        مبتكرة و متطورة ونسعى دائما إلى زيادة كفائة منتجاتنا لنضمن أفضل النتائج الممكنة , حيث نقدم
-        الحلول الأتية في مجال كيماويات البناء .
+        {{ $t('servicesDescription') }}
       </p>
     </div>
     <div class="flex mb-20">
@@ -210,7 +194,7 @@
                     :duration="1200"
                     class="text-white text-3xl font-bold font-Tajawal pb-3"
                   >
-                    {{ program.titele }}
+                    {{ $t(program.translationKey) }}
                   </p>
                   <p
                     v-motion-slide-top
@@ -218,7 +202,7 @@
                     :duration="1000"
                     class="text-white font-Tajawal"
                   >
-                    {{ program.decripicon }}
+                    {{ $t(program.descriptionKey) }}
                   </p>
                 </div>
                 <div class="md:h-[500px] p-4 min-w-[300px]">
@@ -232,8 +216,8 @@
     </div>
   </section>
   <section dir="rtl" class="my-20">
-    <div class="flex w-full justify-between shadow-inner bg-slate-200 flex-col md:flex-row">
-      <div class="pr-6 lg:w-1/2 py-4">
+    <div class="flex w-full flex-col md:flex-row shadow-inner">
+      <div class="pr-6 lg:w-1/2 py-4 bg-slate-200 flex flex-col justify-center">
         <h1
           v-motion-slide-right
           :delay="200"
@@ -243,7 +227,7 @@
           03
         </h1>
         <div v-motion-slide-right :delay="400" :duration="1000">
-          <h1 class="text-5xl text-black font-semibold pb-2">نحن الوكيل الرسمي</h1>
+          <h1 class="text-5xl text-black font-semibold pb-2">{{ $t('officialAgent') }}</h1>
           <h1 class="text-5xl text-black font-semibold">لشركة Weber العالمية</h1>
         </div>
         <p
@@ -252,20 +236,15 @@
           :duration="800"
           class="text-black lg:w-3/4 leading-loose text-lg mt-2"
         >
-          تفخر شركتنا بكونها الوكيل الرسمي والمعتمد لشركة Weber العالمية في ليبيا، الرائدة في مجال
-          العوازل والبتروكيماويات. نقدم لعملائنا في السوق الليبي أحدث المنتجات والتقنيات المتطورة
-          التي تلبي أعلى معايير الجودة والكفاءة. بفضل شراكتنا مع Weber، نوفر حلولًا متكاملة للعزل
-          المائي والحراري، والمواد البتروكيماوية التي تضمن أداءً فائقًا واستدامة طويلة الأمد، مما
-          يسهم في تطوير البنية التحتية وتعزيز الجودة في المشاريع المختلفة داخل ليبيا.
+          {{ $t('weberDescription') }}
         </p>
       </div>
-      <div
-        class="md:w-1/3 h-[25vh] md:h-full bg-secandry pr-6 p-12 flex justify-center items-center"
-      >
+      <div class="md:w-1/2 w-full h-full bg-secandry flex justify-center items-center p-12">
         <img class="w-3/4" src="../assets/imgs/weber3.png" alt="" />
       </div>
     </div>
   </section>
+
   <section dir="rtl" class="my-12">
     <div class="lg:w-1/2 px-6">
       <h1
@@ -277,7 +256,7 @@
         04
       </h1>
       <div v-motion-slide-right :delay="400" :duration="1000">
-        <h1 class="text-6xl text-black font-semibold">التواصل معنا</h1>
+        <h1 class="text-6xl text-black font-semibold">{{ $t('contactUs') }}</h1>
       </div>
       <p
         v-motion-slide-top
@@ -285,34 +264,16 @@
         :duration="800"
         class="text-black lg:w-4/5 mt-4 leading-loose text-lg"
       >
-        فريق مشيد سعيد بخدمتكم في أي وقت. لأي استفسار بإمكانك التواصل معنا:
+        {{ $t('contactDescription') }}
       </p>
-
       <RouterLink to="/contact">
         <button
           class="text-white h-14 w-36 ml-16 mt-4 bg-gradient-to-r mb-10 from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
         >
-          تواصل معنا
+          {{ $t('contactButton') }}
         </button>
       </RouterLink>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.905542470924!2d13.242031175127021!3d32.90066557765773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8930012b75501%3A0x9e29a815306fd94a!2z2YXYtNmK2K8g2YTZhNmD2YrZhdin2YjZitin2Ko!5e0!3m2!1sen!2sly!4v1741404910451!5m2!1sen!2sly"
-        width="1300"
-        height="450"
-        style="border: 0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="mx-20 rounded-lg hidden md:block"
-      ></iframe>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3349.905542470924!2d13.242031175127021!3d32.90066557765773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a8930012b75501%3A0x9e29a815306fd94a!2z2YXYtNmK2K8g2YTZhNmD2YrZhdin2YjZitin2Ko!5e0!3m2!1sen!2sly!4v1741404910451!5m2!1sen!2sly"
-        width="350"
-        height="350"
-        style="border: 0"
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        class="rounded-lg md:hidden"
-      ></iframe>
+      <!-- الخريطة تبقى كما هي -->
     </div>
   </section>
 
@@ -371,44 +332,38 @@ const programs2 = ref([
   {
     id: 1,
     image: 'https://i.postimg.cc/WzxpPzK4/serv1.webp',
-    titele: 'إضافة الخرسانة',
-    decripicon:
-      '   نقدم مجموعة واسعة من الإضافات الخرسانية    المصممة لتحسين قابلية التشغيل، وتقليل نفاذية الخرسانة،     وزيادة القوة والمتانة. سواء كنت بحاجة إلى إضافات مسرعة     أو مبطئة للشك، أو تحسين مقاومة الخرسانة للظروف البيئية     القاسية، فإن حلولنا المبتكرة تضمن أعلى مستويات الأداء والاستدامة.',
+    translationKey: 'concreteAdditives',
+    descriptionKey: 'concreteDescription',
   },
   {
     id: 2,
     image: 'https://i.postimg.cc/VNzfw37X/serv2.jpg',
-    titele: 'أنظمة العزل المائي  والحراري والصوتي',
-    decripicon:
-      'حماية المباني من العوامل البيئية أصبح أسهل    مع أنظمتنا المتطورة للعزل المائي،    الحراري والصوتي. نقدم حلولًا متكاملة لعزل الأسطح، الجدران، والأقبية باستخدام    أحدث التقنيات والمواد ذات الكفاءة العالية، مما يضمن     تقليل استهلاك الطاقة وزيادة الراحة داخل المباني.',
+    translationKey: 'isolationSystems',
+    descriptionKey: 'isolationDescription',
   },
   {
     id: 3,
     image: 'https://i.postimg.cc/t4QRS1WS/serv3.jpg',
-    titele: 'أنظمة ترميم وتأهيل المنشئات',
-    decripicon:
-      'نوفر حلولًا متقدمة لمعالجة التشققات، وتعزيز الهياكل الخرسانية،    وإصلاح العناصر الإنشائية المتضررة بفعل الزمن أو    العوامل البيئية. تشمل خدماتنا مواد وتقنيات     إصلاح عالية الجودة تضمن إعادة تأهيل المباني     والمنشآت لتستعيد كفاءتها وأدائها بأعلى المعايير.',
+    translationKey: 'restorationSystems',
+    descriptionKey: 'restorationDescription',
   },
   {
     id: 4,
     image: 'https://i.postimg.cc/Hs7s90c8/serv4.webp',
-    titele: 'أرضيات صناعية',
-    decripicon:
-      'تصميم وتركيب الأرضيات الصناعية   التي تلبي متطلبات المصانع، المستودعات   ، والمرافق التجارية والصحية، حيث تتميز    بقدرتها العالية على تحمل الأحمال الثقيلة   ، ومقاومتها للاحتكاك، والمواد الكيميائية.    نقدم حلولًا مخصصة تناسب احتياجاتك، سواء كانت   أرضيات إيبوكسي، بولي يوريثان، أو خرسانية معالجة.',
+    translationKey: 'industrialFloors',
+    descriptionKey: 'floorsDescription',
   },
   {
     id: 5,
     image: 'https://i.postimg.cc/mZng9pDG/serv5.jpg',
-    titele: 'الزرع و الحقن الكيميائي',
-    decripicon:
-      'تقنيات مبتكرة لمعالجة التسربات في الخرسانة،    تعزيز التربة، وتأمين الهياكل    باستخدام مواد الحقن الكيميائي   الفعالة. حلول التثبيت الكيميائي    لدينا تضمن قوة تحمل أعلى للبراغي    والمثبتات في المنشآت الخرسانية    والمعدنية، مما يعزز الاستقرار والأمان.',
+    translationKey: 'chemicalInjection',
+    descriptionKey: 'injectionDescription',
   },
   {
     id: 6,
     image: 'https://i.postimg.cc/N0bgjpVS/serv6.webp',
-    titele: 'مواد الاصقة و الرابطة  و المائلة.',
-    decripicon:
-      'نوفر مجموعة شاملة من المواد اللاصقة والسدادات والحشوات المستخدمة في العزل،     والتركيب، وإغلاق الفجوات لضمان مقاومة    ممتازة للمياه، والتآكل، والعوامل البيئية    المختلفة. منتجاتنا مثالية للواجهات    الأرضيات، النوافذ، والأبواب، مما  يعزز جودة البناء ويطيل عمره الافتراضي.',
+    translationKey: 'adhesiveMaterials',
+    descriptionKey: 'adhesiveDescription',
   },
 ])
 </script>

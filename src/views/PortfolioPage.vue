@@ -14,7 +14,7 @@
       <div
         v-for="(program, index) in programs2"
         :key="program.id"
-        class="min-h-screen flex items-center"
+        class="md:min-h-[70vh] min-h-screen flex items-center"
         :class="index % 2 === 0 ? 'bg-white' : 'bg-gray-300'"
       >
         <div class="container mx-auto px-4">
