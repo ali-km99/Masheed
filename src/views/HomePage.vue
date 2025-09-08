@@ -209,7 +209,7 @@
                   </p>
                 </div>
                 <div class="md:h-[500px] p-4 min-w-[300px]">
-                  <img :src="program.image" class="bg-contain rounded-lg" />
+                  <img :src="program.image" class="bg-contain rounded-lg" alt="" />
                 </div>
               </div>
             </swiper-slide>
