@@ -15,7 +15,7 @@ const { locale } = useI18n()
 const productsData = computed<ProductCategory[]>(() =>
   locale.value === 'ar' ? productsDataAR : productsDataEN,
 )
-
+const dir = computed(() => (locale.value === 'ar' ? 'rtl' : 'ltr'))
 const isModalOpen = ref(false)
 const selectedCategory = ref<ProductCategory | null>(null)
 
@@ -30,9 +30,9 @@ const closeModal = () => {
 </script>
 
 <template>
-  <div dir="rtl" class="min-h-[100vh]">
+  <div :dir="dir" class="min-h-[100vh]">
     <div class="relative"><SmallNavbar /></div>
-    <div class="hidden lg:block"><NavBar></NavBar></div>
+    <div class="hidden lg:block" :dir="dir"><NavBar></NavBar></div>
 
     <div>
       <div class="w-4/5 md:h-[50vh] bg-yellow-400 mx-auto my-10 rounded-lg overflow-hidden">

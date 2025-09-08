@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen bg-white font-Tajawal">
     <div dir="rtl" class="relative"><SmallNavbar /></div>
-    <div dir="rtl" class="hidden lg:block"><NavBar></NavBar></div>
+    <div class="hidden lg:block" :dir="dir"><NavBar></NavBar></div>
     <h1
       v-motion-slide-visible-bottom
       :duration="1000"
