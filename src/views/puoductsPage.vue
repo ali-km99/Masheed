@@ -1,23 +1,28 @@
 <script setup lang="ts">
-import { ref } from 'vue'
-import { productsData } from '@/data/products'
+import { computed, ref } from 'vue'
+import { productsDataAR } from '@/data/productsDataAR'
+import { productsDataEN } from '@/data/productsDataEN'
 import type { ProductCategory } from '@/types/products'
 import FooterComp from '@/components/FooterComp.vue'
 import SmallNavbar from '@/components/SmallNavbar.vue'
 import NavBar from '@/components/NavBar.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import { Autoplay, Navigation, Pagination } from 'swiper/modules'
+import { useI18n } from 'vue-i18n'
 // حالة الـ Modal
+
+const { locale } = useI18n()
+const productsData = computed<ProductCategory[]>(() =>
+  locale.value === 'ar' ? productsDataAR : productsDataEN,
+)
+
 const isModalOpen = ref(false)
 const selectedCategory = ref<ProductCategory | null>(null)
 
-// فتح الـ Modal لعرض كل المنتجات
 const openModal = (category: ProductCategory) => {
   selectedCategory.value = category
   isModalOpen.value = true
 }
-
-// إغلاق الـ Modal
 const closeModal = () => {
   isModalOpen.value = false
   selectedCategory.value = null
@@ -34,23 +39,22 @@ const closeModal = () => {
         <img class="" src="../assets/imgs/bg3.webp" alt="" />
       </div>
       <div class="w-4/5 mx-auto">
-        <p class="text-3xl text-black font-Tajawal">ماذا تقدم لكم مشيد ؟</p>
+        <p class="text-3xl text-black font-Tajawal">{{ $t('what_offer') }}</p>
         <p class="text-black w-3/4 font-Tajawal">
-          نسعى لتوفير كل ما يحتاجه المستهلك في ليبيا، من كيماويات البناء بجودة تفوق توقعات عملائنا
-          دائماً. منتجاتنا من علامات تجارية متعددة حول العالم، نهدف لجعل كل ما تحتاجه متوفر أينما
-          كنت، بأسعار تنافسية، بالإضافة إلى تقديم منتجات جديدة استجابة لطلبات الزبائن واحتياجات
-          السوق.
+          {{ $t('intro_text') }}
         </p>
       </div>
 
       <section class="w-4/5 mx-auto my-10">
-        <p class="text-3xl text-black font-Tajawal mt-20 mb-14">استكشف ما نوفره لكم من منتجات</p>
-
+        <p class="text-3xl text-black font-Tajawal mt-20 mb-14">
+          {{ $t('explore_products') }}
+        </p>
         <div class="grid md:grid-cols-3 grid-cols-1 gap-5">
           <div
             v-for="category in productsData"
             :key="category.id"
             @click="openModal(category)"
+            :dir="locale === 'ar' ? 'rtl' : 'ltr'"
             class="py-6 bg-[#FEEB00]/60 hover:bg-[#FEEB00]/80 rounded-lg duration-500"
           >
             <div class="w-4/5 mx-auto rounded-lg overflow-hidden">
@@ -63,7 +67,7 @@ const closeModal = () => {
               {{ category.text }}
             </p>
             <button @click="openModal(category)" class="w-4/5 mx-auto hover:scale-105 duration-500">
-              عرض جميع المنتجات
+              {{ $t('show_all_products') }}
             </button>
           </div>
           <!-- Modal -->
@@ -76,7 +80,7 @@ const closeModal = () => {
                 @click="closeModal"
                 class="hover:text-primarybg-red-600 text-white text-lg mx-auto p-2 px-6 m-2 bg-gradient-to-r from-primary to-[#ff3902] rounded-full hover:from-primary hover:to-primary"
               >
-                رجوع
+                {{ $t('back') }}
               </button>
 
               <h2 class="text-2xl font-bold mb-4">{{ selectedCategory?.name }}</h2>
@@ -115,7 +119,7 @@ const closeModal = () => {
                       <p class="text-gray-700 text-sm mb-2">{{ product.text }}</p>
 
                       <div>
-                        <h4 class="font-semibold text-sm mb-1">الأستعمال:</h4>
+                        <h4 class="font-semibold text-sm mb-1">{{ $t('usage') }}</h4>
                         <ul class="list-disc list-inside text-sm text-gray-600">
                           <li v-for="type in product.type" :key="type">{{ type }}</li>
                         </ul>

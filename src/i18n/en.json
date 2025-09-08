@@ -1,6 +1,39 @@
 {
+  "about": {
+    "heroTitle": "About Us",
+    "section1": {
+      "title": "Company Foundation",
+      "p1": "Masheed Chemicals was founded by a group of specialized engineers with extensive experience in material sciences, with over twenty years in the chemical industry. The company specializes in petrochemicals, oil and gas, construction, and most industrial sectors.",
+      "caption": "Our team during the execution of one of the projects",
+      "p2": "We are also proud to collaborate with leading international companies to deliver high-quality professional solutions through integrated teams of consultants, engineers, and technical staff."
+    },
+    "section2": {
+      "title": "Our Vision",
+      "quote": "We provide fast solutions and unique technologies with high quality. We continuously strive for research and development to find new ways to meet all our clients' needs according to local and international standards."
+    },
+    "section3": {
+      "title": "Oil, Gas and Petrochemicals",
+      "p": "The oil, gas, and petrochemical sector is the backbone of the Libyan economy and the main source of income for the country. Therefore, at Masheed Chemicals, we place great emphasis on this field and provide the best and latest products and technologies for the sector."
+    },
+    "section4": {
+      "title": "Our Mission",
+      "p": "At Masheed Chemicals, we are committed to delivering advanced chemical solutions that meet the needs of vital sectors in Libya and abroad, with a strong focus on the oil, gas, and petrochemical industries. We continuously pursue innovation and provide integrated solutions in corrosion resistance, drilling and exploration materials, oil well maintenance, and gas treatment."
+    }
+  },
+
+  "contact": {
+    "title": "Let’s Stay Connected",
+    "description": "Staying in touch with Masheed has never been easier. Call us or send us an email and we’ll get back to you as soon as possible!",
+    "email": "Email",
+    "email_address": "info@Masheed.ly",
+    "working_hours": "Working Hours",
+    "working_hours_time": "Working hours 8:30 AM - 8:00 PM",
+    "phone": "Phone",
+    "phone_number": "+7-843-672-431",
+    "social": "Social Media"
+  },
   "home": "Home",
-  "about": "About",
+  "about2": "About",
   "aboutWeber": "About Weber",
   "ourWork": "Our Work",
   "contactUs": "Contact Us",
@@ -39,5 +72,15 @@
   "officialAgent": "We are the Official Agent",
   "weberDescription": "We are proud to be the official and certified agent of Weber International in Libya, a leader in insulation and petrochemicals.",
   "contactDescription": "The Mushaid team is happy to serve you at any time. For any inquiries, you can contact us:",
-  "contactButton": "Contact Us"
+  "WeberInter": "for the international company Weber. ",
+  "contactButton": "Contact Us",
+  "proto": " Our distinguished works ",
+  "products": "Products",
+  "what_offer": "What does Moshid offer you?",
+  "intro_text": "We strive to provide everything consumers in Libya need, from construction chemicals with quality that exceeds our clients’ expectations. Our products come from multiple international brands. We aim to make everything you need available wherever you are, at competitive prices, while also introducing new products in response to customer requests and market needs.",
+  "explore_products": "Explore the products we offer",
+  "show_all_products": "Show all products",
+  "back": "Back",
+  "usage": "Usage:",
+  "pages": "Pages"
 }

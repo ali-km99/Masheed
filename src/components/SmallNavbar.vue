@@ -76,7 +76,7 @@ const changeLanguage = () => {
 
           <li v-motion-pop :delay="200" class="py-2 border-b-2 border-bluee-sec w-full text-center">
             <RouterLink :to="{ name: 'about' }" @click="toggelMinu">
-              {{ t('about') }}
+              {{ t('about2') }}
             </RouterLink>
           </li>
 

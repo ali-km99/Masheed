@@ -1,13 +1,13 @@
 <template>
   <div
-    dir="rtl"
+    :dir="dir"
     class="md:bg-home bg-homeSM min-h-[100vh] bg-no-repeat md:bg-right-top md:bg-cover bg-center bg-contain bg-fixed"
   >
     <div class="relative"><SmallNavbar /></div>
     <div class="hidden lg:block"><NavBar></NavBar></div>
     <section
       class="text-white md:p-8 p-4 font-Tajawal font-[900] bg-gray-800/65 md:w-3/4 mx-8 my-4"
-      dir="rtl"
+      :dir="dir"
     >
       <div
         class="md:p-10 p-4 lg:text-6xl text-xl"
@@ -65,11 +65,14 @@
       </swiper-slide>
     </swiper>
   </section>
-  <section dir="rtl">
+  <section :dir="dir">
     <div
       class="md:bg-home bg-homeSM bg-no-repeat md:bg-right-top md:bg-cover bg-center bg-contain bg-fixed"
     >
-      <div class="bg-gray-800/65 md:w-1/3 w-full p-4">
+      <div
+        class="bg-gray-800/65 md:w-1/3 w-full p-4"
+        :class="locale === 'ar' ? 'pr-6 mr-12' : 'pl-6  ml-12'"
+      >
         <h1
           v-motion-slide-right
           :delay="200"
@@ -150,7 +153,7 @@
     </div>
   </section>
 
-  <section dir="rtl">
+  <section :dir="dir">
     <div class="lg:w-1/2 px-6">
       <h1
         v-motion-slide-right
@@ -215,9 +218,12 @@
       </div>
     </div>
   </section>
-  <section dir="rtl" class="my-20">
+  <section :dir="dir" class="my-20">
     <div class="flex w-full flex-col md:flex-row shadow-inner">
-      <div class="pr-6 lg:w-1/2 py-4 bg-slate-200 flex flex-col justify-center">
+      <div
+        class="pr-6 lg:w-1/2 py-4 bg-slate-200 flex flex-col justify-center"
+        :class="locale === 'ar' ? 'pr-6 ' : 'pl-6 '"
+      >
         <h1
           v-motion-slide-right
           :delay="200"
@@ -228,7 +234,7 @@
         </h1>
         <div v-motion-slide-right :delay="400" :duration="1000">
           <h1 class="text-5xl text-black font-semibold pb-2">{{ $t('officialAgent') }}</h1>
-          <h1 class="text-5xl text-black font-semibold">لشركة Weber العالمية</h1>
+          <h1 class="text-5xl text-black font-semibold max-w-[500px]">{{ $t('WeberInter') }}</h1>
         </div>
         <p
           v-motion-slide-top
@@ -245,7 +251,7 @@
     </div>
   </section>
 
-  <section dir="rtl" class="my-12">
+  <section :dir="dir" class="my-12">
     <div class="lg:w-1/2 px-6">
       <h1
         v-motion-slide-right
@@ -288,9 +294,12 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import NavBar from '@/components/NavBar.vue'
 import SmallNavbar from '@/components/SmallNavbar.vue'
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 import FooterComp from '@/components/FooterComp.vue'
+import { useI18n } from 'vue-i18n'
 
+const { locale } = useI18n()
+const dir = computed(() => (locale.value === 'ar' ? 'rtl' : 'ltr'))
 // import FooterComp from '@/components/FooterComp.vue'
 // import ContactUS from '@/components/ContactUS.vue'
 

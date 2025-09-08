@@ -1,16 +1,17 @@
 <template>
-  <div class="p-4 min-h-screen font-Tajawal">
+  <div class="relative p-4 min-h-screen font-Tajawal overflow-hidden">
+    <!-- المحتوى -->
     <h1
-      class="text-5xl font-bold mb-4 text-center p-4 text-primary font-Tajawal"
+      class="text-5xl font-bold mb-4 text-center p-4 text-primary font-Tajawal relative z-10"
       v-motion-slide-visible-bottom
       :delay="200"
       :duration="1000"
     >
-      دعونا نبقى على تواصل
+      {{ $t('contact.title') }}
     </h1>
-    <p class="text-black text-center" dir="rtl">
-      لم يكن التواصل مع مشيد بهذه السهولة من قبل. اتصل بنا أو أرسل بريدًا إلكترونيًا وسنرد عليك في
-      أقرب وقت ممكن !
+
+    <p class="text-black text-center">
+      {{ $t('contact.description') }}
     </p>
 
     <div class="md:grid grid-cols-4 gap-4 m-6 p-6 font-Tajawal">
@@ -18,28 +19,33 @@
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/mail2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">البريد الأكتروني</p>
-        <p class="text-black text-center">info@Masheed.ly</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">{{ $t('contact.email') }}</p>
+        <p class="text-black text-center">{{ $t('contact.email_address') }}</p>
       </div>
+
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/time2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">مواعيد العمل</p>
-        <p class="text-black text-center">مواعيد العمل 8:30 ص - 8:00 م</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">
+          {{ $t('contact.working_hours') }}
+        </p>
+        <p class="text-black text-center">{{ $t('contact.working_hours_time') }}</p>
       </div>
+
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/phone2.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">هاتف</p>
-        <p class="text-black text-center">+7-843-672-431</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">{{ $t('contact.phone') }}</p>
+        <p class="text-black text-center">{{ $t('contact.phone_number') }}</p>
       </div>
+
       <div class="flex items-center justify-center flex-col">
         <div class="bg-primary size-14 rounded-full flex p-2 items-center justify-center my-3">
           <img src="../assets/icons/internet.png" alt="" />
         </div>
-        <p class="text-primary text-3xl text-center my-3 font-bold">تواصل اجتماعي</p>
+        <p class="text-primary text-3xl text-center my-3 font-bold">{{ $t('contact.social') }}</p>
         <div class="flex gap-2 items-center">
           <a href="facebook.com"><img width="35px" src="../assets/icons/instagram.png" alt="" /></a>
           <a href="instagrm.com"><img width="35px" src="../assets/icons/facebook.png" alt="" /></a>
@@ -69,3 +75,4 @@
     </div>
   </div>
 </template>
+<style scoped></style>

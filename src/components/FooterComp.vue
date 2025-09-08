@@ -5,28 +5,36 @@
         <img class="pt-2 mt-4 mx-auto" width="200" src="../assets/imgs/logo.png" alt="" />
       </div>
       <div class="h-full md:w-1/3 w-full">
-        <h3 class="text-center text-primary p-3 mb-6 text-xl font-bold">الصفحات</h3>
+        <h3 class="text-center text-primary p-3 mb-6 text-xl font-bold">{{ $t('pages') }}</h3>
         <div class="flex justify-around">
           <ul class="p-2 text-black/50">
             <li class="my-2">
-              <RouterLink to="/" class="hover:text-black duration-200"> الصفحة الرئيسة </RouterLink>
+              <RouterLink to="/" class="hover:text-black duration-200">
+                {{ $t('home') }}</RouterLink
+              >
             </li>
             <li class="my-2">
-              <RouterLink to="/about" class="hover:text-black duration-200"> المنتجات </RouterLink>
-            </li>
-            <li class="my-2">
-              <RouterLink to="/Portfolio" class="hover:text-black duration-200">
-                أعمالنا
+              <RouterLink to="/products" class="hover:text-black duration-200">
+                {{ $t('products') }}
               </RouterLink>
             </li>
             <li class="my-2">
-              <RouterLink to="/about" class="hover:text-black duration-200"> حول </RouterLink>
+              <RouterLink to="/Portfolio" class="hover:text-black duration-200">
+                {{ $t('ourWork') }}
+              </RouterLink>
+            </li>
+            <li class="my-2">
+              <RouterLink to="/about" class="hover:text-black duration-200">
+                {{ $t('about2') }}
+              </RouterLink>
             </li>
           </ul>
         </div>
       </div>
       <div class="h-full md:w-1/4">
-        <h3 class="text-center text-primary p-3 mb-6 text-xl font-bold">التواصل</h3>
+        <h3 class="text-right mr-3 text-primary p-3 mb-6 text-xl font-bold">
+          {{ $t('contactUs') }}
+        </h3>
         <ul class="p-2 text-black/50">
           <li class="my-2 flex items-center">
             <img src="../assets/icons/redPhonr.png" class="size-7 mx-2" alt="" />
@@ -39,7 +47,7 @@
           </li>
           <li class="my-2 flex items-center">
             <img src="../assets/icons/redTime.png" class="size-7 mx-2" alt="" />
-            <p>مواعيد العمل 8:30 ص - 8:30 م</p>
+            <p>{{ $t('contact.working_hours_time') }}</p>
           </li>
         </ul>
       </div>

@@ -2,10 +2,12 @@
   <nav class="bg-gray-400/[53%] backdrop-blur-md flex items-center px-20 h-[120px]">
     <img width="180" class="ml-8" src="../assets/imgs/logo.png" alt="" />
 
-    <div class="flex w-2/3 gap-16 text-white font-semibold font-cairo duration-300 text-lg mx-auto">
+    <div
+      class="flex w-2/3 gap-12 justify-center text-white font-semibold font-cairo duration-300 text-lg mx-auto"
+    >
       <RouterLink to="/" class="hover:text-primary duration-300 p-3"> {{ $t('home') }} </RouterLink>
       <RouterLink to="/about" class="hover:text-primary duration-300 p-3">
-        {{ $t('about') }}
+        {{ $t('about2') }}
       </RouterLink>
       <RouterLink to="/products" class="hover:text-[#FFEB00] duration-300 p-3">
         {{ $t('aboutWeber') }}
