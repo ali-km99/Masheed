@@ -47,9 +47,19 @@
         </div>
         <p class="text-primary text-3xl text-center my-3 font-bold">{{ $t('contact.social') }}</p>
         <div class="flex gap-2 items-center">
-          <a href="facebook.com"><img width="35px" src="../assets/icons/instagram.png" alt="" /></a>
-          <a href="instagrm.com"><img width="35px" src="../assets/icons/facebook.png" alt="" /></a>
-          <a href="youtube.com"><img width="35px" src="../assets/icons/youtube.png" alt="" /></a>
+          <a href="https://www.facebook.com/share/1GUrdUdzK7/?mibextid=wwXIfr"
+            ><img width="35px" src="../assets/icons/instagram.png" alt=""
+          /></a>
+          <a href="https://www.instagram.com/mshydllkymwyt?igsh=MWdjcHBjc2pzamRpZA=="
+            ><img width="35px" src="../assets/icons/facebook.png" alt=""
+          /></a>
+          <a href="https://www.tiktok.com/@user516502814988?_t=ZM-8zVZVMO1FeY&_r=1"
+            ><img width="35px" src="../assets/icons/tiktok.png" alt=""
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=%2B218923336005&context=AfcQo2rMxsltepQhOJPRnirkwWvX_TorSjhVES7m_OWyKMhuw0xaK2-N7OQCYMFw3zrUQp1x0k3BAQKApBWjkv5Mg4_aTl05LpGiQrB51UkkqeVUAJXAcKIIpoNyzXsieVoiOf4XGIDyW8ZAq_gnncH-jA&source=FB_Page&app=facebook&entry_point=page_cta"
+            ><img width="35px" src="../assets/icons/whatsapp.png" alt=""
+          /></a>
         </div>
       </div>
     </div>

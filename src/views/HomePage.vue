@@ -32,9 +32,17 @@
           v-motion-slide-top
           :delay="1500"
           :duration="500"
-          class="border-secandry border-2 p-4 rounded-md hover:bg-secandry/80 duration-500 hover:border-transparent"
+          class="border-primary border-2 p-4 rounded-md hover:bg-primary/80 duration-500 hover:border-transparent"
         >
           <RouterLink :to="{ name: 'about' }"> {{ $t('aboutMushaid') }} </RouterLink>
+        </button>
+        <button
+          v-motion-slide-top
+          :delay="1500"
+          :duration="500"
+          class="border-secandry border-2 p-4 rounded-md hover:bg-secandry/80 duration-500 hover:border-transparent"
+        >
+          <RouterLink :to="{ name: 'products' }"> {{ $t('aboutWeber') }} </RouterLink>
         </button>
       </div>
     </section>

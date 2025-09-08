@@ -54,9 +54,15 @@
     </div>
     <hr class="border-blatext-white/15" />
     <div class="w-full h-5 justify-center items-center gap-2 flex my-6">
-      <a href=""><img width="35px" src="../assets/icons/youtube.png" alt="" /></a>
-      <a href=""><img width="35px" src="../assets/icons/facebook.png" alt="" /></a>
-      <a href=""><img width="35px" src="../assets/icons/instagram.png" alt="" /></a>
+      <a href="https://www.facebook.com/share/1GUrdUdzK7/?mibextid=wwXIfr"
+        ><img width="35px" src="../assets/icons/facebook.png" alt=""
+      /></a>
+      <a href="https://www.instagram.com/mshydllkymwyt?igsh=MWdjcHBjc2pzamRpZA=="
+        ><img width="35px" src="../assets/icons/instagram.png" alt=""
+      /></a>
+      <a href="https://www.tiktok.com/@user516502814988?_t=ZM-8zVZVMO1FeY&_r=1"
+        ><img width="35px" src="../assets/icons/tiktok.png" alt=""
+      /></a>
     </div>
     <p class="text-center text-black/50 mt-3 text-sm">© 2025 Masheed</p>
   </footer>
