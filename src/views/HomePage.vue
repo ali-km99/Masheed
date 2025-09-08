@@ -60,7 +60,7 @@
     >
       <swiper-slide v-for="program in programs" :key="program.id" class="px-12 drop-shadow-md">
         <div class="w-52 h-52 mx-auto mt-6">
-          <img :src="program.image" class="rounded-[50%] w-52 h-52" />
+          <img :src="program.image" class="rounded-[50%] w-52 h-52" alt="مشاريعنا " />
         </div>
       </swiper-slide>
     </swiper>
