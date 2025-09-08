@@ -20,7 +20,7 @@
           <img src="../assets/icons/mail2.png" alt="" />
         </div>
         <p class="text-primary text-3xl text-center my-3 font-bold">{{ $t('contact.email') }}</p>
-        <p class="text-black text-center">{{ $t('contact.email_address') }}</p>
+        <p class="text-black text-center">info@masheed.ly</p>
       </div>
 
       <div class="flex items-center justify-center flex-col">
@@ -55,6 +55,10 @@
           /></a>
           <a href="https://www.tiktok.com/@user516502814988?_t=ZM-8zVZVMO1FeY&_r=1"
             ><img width="35px" src="../assets/icons/tiktok.png" alt=""
+          /></a>
+          <a
+            href="https://api.whatsapp.com/send?phone=%2B218923336005&context=Afe9GBHqcpLyB8Va1iwrqk_QDjIZeZAFhtvhBLnCNJgdida85sQLLi0CU2n7x7K-gKhPsxCvdc3O_mPcxKdiKZaaD8ARc9ccrz4G9rcdKvlTN5g2KQ6tMtYFFLThMbAzL0Aw2NtjR2ocj2yuTpN2-yUM9A&source=FB_Page&app=facebook&entry_point=page_cta"
+            ><img width="35px" src="../assets/icons/whatsapp.png" alt=""
           /></a>
         </div>
       </div>
