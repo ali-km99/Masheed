@@ -1,7 +1,7 @@
 <template>
   <div
     :dir="dir"
-    rel="preload"
+    fetchpriority="high"
     class="md:bg-home bg-homeSM min-h-[100vh] bg-no-repeat md:bg-right-top md:bg-cover bg-center bg-contain bg-fixed"
   >
     <div class="relative"><SmallNavbar /></div>
