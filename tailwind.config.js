@@ -8,8 +8,8 @@ export default {
         cairo: ['Cairo', 'sans-serif'],
       },
       backgroundImage: {
-        home: "url('../assets/imgs/img8.jpg')",
-        homeSM: "url('../assets/imgs/img8sm.jpg')",
+        home: "url('https://i.postimg.cc/764rHrMP/img8.webp')",
+        homeSM: "url('https://i.postimg.cc/L6w74Mmd/img8sm.webp')",
         products: "url('../assets/imgs/bg3.webp')",
       },
       colors: {
